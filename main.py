@@ -955,6 +955,7 @@ def check_outputs(
         pad_idx=2,
         eos_string="</s>",
 ):
+    n_examples = 10
     results = [()] * n_examples
     for idx in range(n_examples):
         b = next(iter(valid_dataloader))
@@ -968,20 +969,20 @@ def check_outputs(
         tgt_tokens = [
             vocab_tgt.get_itos()[x] for x in rb.tgt[0] if x != pad_idx
         ]
-        print(
-            "Source Text (Input)        : "
-            + " ".join(src_tokens).replace("\n", "")
-        )
-        print(
-            "Target Text (Ground Truth) : "
-            + " ".join(tgt_tokens).replace("\n", "")
-        )
+        # print(
+        #     "Source Text (Input)        : "
+        #     + " ".join(src_tokens).replace("\n", "") + "\n"
+        # )
+        with open("reference.txt", 'a') as f:
+            f.write(
+            " ".join(tgt_tokens).replace("\n", "") + "\n")
 
         model_out = greedy_decode(model, rb.src, rb.src_mask, 72, 0)[0]
         model_text = (
             " ".join([vocab_tgt.get_itos()[x] for x in model_out if x != pad_idx]).split(eos_string, 1)[0] + eos_string
         )
-        print(model_text)
+        with open("hypothesis.txt", 'a') as f:
+            f.write(model_text + "\n")
 
         results[idx] = (rb, src_tokens, tgt_tokens, model_out, model_text)
 
