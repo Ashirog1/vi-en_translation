@@ -1,0 +1,22 @@
+Để sử dụng độ đo SacreBLEU (https://github.com/mjpost/sacrebleu) người dùng thực hiện các bước sau:
+
+•	Bước 1: Tải về mã nguồn mosesdecoder, sử dụng lệnh:
+git clone https://github.com/moses-smt/mosesdecoder.
+
+•	Bước 2: Cài đặt sacreBLEU, sử dụng lệnh:
+pip install sacrebleu
+
+•	Bước 3: Viết file eval.sh có nội dung như sau:
+SCRIPTS=<Đường dẫn đến thư mục
+           mosesdecoder>/mosesdecoder/scripts
+TOKENIZER=$SCRIPTS/tokenizer/tokenizer.perl
+file_ref=<Đường dẫn tới file văn bản dẫn xuất>
+file_hyp=<Đường dẫn tới file văn bản ứng viên>
+cat $file_path1 | $TOKENIZER vi > file.ref
+cat $file_path2 | $TOKENIZER vi > file.hyp
+sacrebleu -tok '13a' -s 'exp' file.ref < file.hyp
+
+•	Bước 4: Chạy lệnh để thu được điểm số BLEU.
+    sh eval.sh
+
+Lưu ý: File dẫn xuất và file ứng viên thỏa mãn điều kiện: mỗi file chỉ có một dòng và dòng đó chứa nội dung của toàn bộ văn bản.
