@@ -36,47 +36,54 @@
 #    )
 
 
-import spacy
-import torch.nn as nn
-import torch
+# import spacy
+# import torch.nn as nn
+# import torch
 
-nlp = spacy.load('en_core_web_sm')
+# nlp = spacy.load('en_core_web_sm')
 
-def create_embedding(sentence, embedding_model):
-    # Tokenize the sentence using spaCy
-    doc = nlp(sentence)
+# def create_embedding(sentence, embedding_model):
+#     # Tokenize the sentence using spaCy
+#     doc = nlp(sentence)
     
-    # Create a list to store the embeddings and dependency parsing information
-    embeddings = []
-    dep_info = []
+#     # Create a list to store the embeddings and dependency parsing information
+#     embeddings = []
+#     dep_info = []
     
-    # Iterate over each token in the sentence
-    for token in doc:
-        # Get the word embedding for the token using nn.embedding
-        word_embedding = embedding_model(torch.tensor([token.i]))
-        embeddings.append(word_embedding)
+#     # Iterate over each token in the sentence
+#     for token in doc:
+#         # Get the word embedding for the token using nn.embedding
+#         word_embedding = embedding_model(torch.tensor([token.i]))
+#         embeddings.append(word_embedding)
         
-        # Get the dependency parsing information for the token
-        dep_info.append(token.dep_)
+#         # Get the dependency parsing information for the token
+#         dep_info.append(token.dep_)
         
-    # Concatenate the embeddings and dependency parsing information into a single vector
-    embedding = torch.cat(embeddings)
-    print(embedding.shape)
-    dep_tensor = torch.tensor([nlp.vocab.strings[s] for s in dep_info])
-    dep_tensor = dep_tensor.unsqueeze(1) # add a new dimension
-    print(dep_tensor.shape)
-    embedding = torch.cat([embedding, dep_tensor], dim=1)  # concatenate along the second dimension
+#     # Concatenate the embeddings and dependency parsing information into a single vector
+#     embedding = torch.cat(embeddings)
+#     print(embedding.shape)
+#     dep_tensor = torch.tensor([nlp.vocab.strings[s] for s in dep_info])
+#     dep_tensor = dep_tensor.unsqueeze(1) # add a new dimension
+#     print(dep_tensor.shape)
+#     embedding = torch.cat([embedding, dep_tensor], dim=1)  # concatenate along the second dimension
 
-    print(embedding.shape)
-    return embedding
+#     print(embedding.shape)
+#     return embedding
 
 
-# Load a pre-trained word embedding model
-embedding_model = nn.Embedding(10000, 5)
+# # Load a pre-trained word embedding model
+# embedding_model = nn.Embedding(10000, 5)
 
-# Create an embedding for a sentence
-sentence = "The quick."
-embedding = create_embedding(sentence, embedding_model)
+# # Create an embedding for a sentence
+# sentence = "The quick."
+# embedding = create_embedding(sentence, embedding_model)
 
-# Print the resulting embedding vector
-print(embedding)
+# # Print the resulting embedding vector
+# print(embedding)
+
+
+def a(x):
+    q, w, e = x
+    print(q, w, e)
+
+a(1, 3, 5)

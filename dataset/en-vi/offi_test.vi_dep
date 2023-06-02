@@ -1,0 +1,790 @@
+tpc nmod loc pob punct sub root dob vmod loc punct nmod tmp nmod nmod punct
+sub root vmod tmp sub nmod nmod vmod det punct pob amod nmod punct nmod pob punct
+sub nmod nmod tmp pob det adv root dob vmod loc tmp pob nmod vmod dob nmod nmod dob nmod loc pob punct
+punct sub root vmod det dob nmod tmp det prp vmod dep sub adv adv vmod adv vmod punct det tmp adv vmod vmod punct punct sub dep loc pob nmod nmod tmp nmod pob punct
+punct sub root det dob vmod nmod dob nmod nmod amod amod nmod punct nmod nmod nmod nmod amod amod nmod punct
+sub root sub nmod tmp adv vmod loc det punct pob amod nmod punct nmod pob punct vmod vmod vmod punct sub nmod nmod nmod adv vmod vmod det tmp punct punct
+punct sub nmod nmod amod adv root punct tmp sub adv dep vmod det pob nmod punct
+sub root dob nmod iob dob nmod coord conj punct coord sub adv conj tmp pob nmod nmod pob punct
+punct sub nmod adv root dob vmod adv det tmp nmod nmod pob punct punct sub dep punct
+tmp pob det punct sub nmod vmod nmod root vmod sub nmod vmod det dob nmod dob nmod nmod tmp pob det nmod x punct det dep nmod tmp tmp pob sub nmod punct
+sub nmod amod root amod nmod det ext vmod vmod tmp pob det coord conj amod det amod vmod vmod pob nmod nmod tmp pob nmod vmod tmp pob det punct
+sub root vmod adv vmod vmod vmod tmp tmp vmod dob coord sub conj det nmod det dob sub adv nmod vmod dob nmod nmod nmod pob nmod nmod punct
+sub nmod det adv adv adv root dob nmod amod prp pob nmod vmod vmod tmp pob nmod x loc pob nmod punct
+sub adv root dep sub nmod vmod dob nmod nmod pob adv vmod vmod det punct dob nmod nmod punct nmod pob nmod nmod pob punct
+tmp dep pob det punct sub adv root det dob nmod det pob nmod nmod nmod nmod det pob nmod dep tmp pob adv nmod dob nmod amod pob
+sub adv root vmod adv nmod det det ext coord det sub conj dep sub adv vmod nmod det det sub vmod punct
+sub adv root vmod pob nmod sub vmod dob nmod det dob nmod nmod prp vmod dob nmod prp pob punct
+sub root sub nmod pob nmod adv adv vmod vmod pob nmod det pob tmp pob nmod x dep sub nmod amod vmod vmod adv dob nmod punct
+punct mnr pob punct sub root dep det sub nmod pob adv adv vmod vmod vmod nmod pob nmod punct punct
+sub punct sub nmod root dob nmod punct
+det sub nmod vmod adv root vmod dep pmod dep punct
+dep root dob adv vmod vmod sub adv vmod dob nmod punct tmp pob sub nmod nmod vmod vmod nmod nmod punct coord punct tmp pob nmod amod punct adv conj punct
+sub sub adv nmod dob nmod vmod adv root sub nmod dob nmod vmod nmod coord conj nmod adv nmod vmod vmod vmod punct
+nmod tmp det punct det sub nmod coord conj adv root det dob nmod nmod amod nmod vmod pob punct
+det sub adv root dob nmod pob nmod nmod det pob nmod det dob amod nmod punct
+pmod pob det punct det sub adv root det dob nmod vmod prp pob loc pob coord conj punct pob sub nmod nmod vmod vmod punct
+sub nmod nmod root dob nmod amod
+sub nmod punct sub nmod nmod nmod x root dob amod amod nmod dob punct
+sub nmod nmod adv vmod root coord vmod vmod vmod pob punct
+sub nmod nmod nmod punct punct nmod nmod punct adv root dob nmod nmod pob nmod nmod vmod punct prp sub dep vmod coord punct vmod adv vmod pob punct coord adv conj nmod dob vmod vmod dob punct
+sub nmod nmod coord nmod adv root vmod punct adv vmod adv det coord det dob punct
+tmp vmod pob punct adv root vmod nmod dob nmod amod prp vmod dob nmod punct
+root nmod vmod
+sub nmod det pob det adv root vmod nmod dob nmod mnr pob punct
+dep punct tpc pob nmod punct det sub adv root dob nmod pob coord det conj nmod nmod amod punct
+pmod pob det nmod nmod punct det sub nmod nmod adv root dob nmod mnr amod punct
+tmp det amod nmod punct det sub nmod root vmod pob nmod nmod punct det nmod nmod dob nmod nmod coord punct coord adv conj dob punct
+sub nmod punct sub loc pob root dob nmod iob pob coord conj
+sub nmod nmod root dob nmod tmp iob pob nmod punct nmod coord det conj nmod punct
+sub nmod nmod root tmp pob det dep sub nmod coord det conj nmod vmod vmod vmod dob nmod tmp det pob nmod pmod det pob nmod punct
+sub nmod det punct adv root vmod tmp pob det coord conj nmod det tmp punct dep amod pob sub adv adv nmod loc coord conj tmp pob nmod det punct
+sub root loc pob nmod punct punct sub vmod vmod punct
+adv pob coord conj nmod punct det sub nmod adv root loc det pob nmod punct nmod punct nmod punct nmod punct nmod punct nmod punct nmod coord nmod punct
+punct sub adv adv root loc tmp det pob nmod punct punct sub dep punct
+nmod sub nmod vmod vmod det dob nmod adv root vmod dob punct dep punct punct
+punct sub adv root dob nmod vmod punct punct sub dep adv punct tmp pob vmod sub adv adv punct vmod vmod punct dob
+det sub nmod root vmod dob nmod nmod pob loc pob coord conj vmod nmod nmod nmod nmod tmp det punct
+tmp pob det punct sub nmod root nmod det sub nmod nmod nmod tmp adv vmod loc pob punct sub prd amod tmp tmp det pob det punct dep det sub vmod dep sub nmod nmod pob dep vmod pob nmod punct
+root nmod
+dep tmp pob sub nmod nmod vmod punct sub nmod adv root dob nmod nmod nmod prp vmod dob nmod nmod nmod nmod nmod loc nmod pob punct
+sub adv root dob nmod dob nmod punct vmod vmod dep sub det vmod vmod nmod nmod nmod vmod pob nmod det pob punct
+sub adv root vmod punct det pob nmod punct punct mnr pob nmod det pob nmod nmod nmod adv tmp pob det punct
+sub nmod nmod root dob nmod nmod sub vmod dob nmod amod prp vmod dob nmod nmod punct
+tmp nmod det sub adv root dob nmod nmod adv adv nmod dob tmp det pob det punct
+tpc nmod dob nmod punct root sub nmod pob nmod vmod vmod dob punct
+adv pob nmod punct sub nmod pob nmod adv root punct dob nmod nmod punct nmod vmod pob det punct
+nmod det sub nmod amod adv root tmp pob nmod dob punct
+dep tmp pob sub nmod det dob nmod vmod punct det sub det adv root vmod prp vmod dob nmod vmod punct
+det sub det adv root loc pob nmod pob nmod vmod punct coord tmp pob conj dir pob nmod vmod punct
+root coord conj nmod pob nmod
+sub nmod nmod root coord det dob nmod vmod pob nmod punct coord sub adv conj tmp punct
+sub nmod nmod adv root det tmp coord det conj punct tmp pob det sub nmod vmod coord conj vmod adv dep sub nmod vmod vmod tmp pob det pob punct
+sub det root adv dob nmod vmod vmod pob nmod nmod punct prp sub nmod nmod pob adv vmod dep prp vmod dob nmod amod nmod nmod pob punct
+root nmod nmod pob nmod
+sub nmod nmod tmp nmod root vmod vmod pob nmod nmod punct nmod nmod nmod coord conj nmod nmod nmod punct tmp pob det punct
+sub nmod nmod root vmod dob nmod nmod nmod tmp pob det punct
+root vmod prp dob coord conj
+sub nmod root vmod tmp det tmp pob nmod nmod pob nmod loc pob punct
+det tmp nmod punct pmod det pob nmod nmod nmod loc pob nmod nmod punct det sub nmod root det dob adv vmod vmod prp vmod dob coord conj dob vmod loc pob punct
+tmp det sub root vmod det dob nmod loc pob nmod pob nmod nmod nmod prp vmod adv dob nmod nmod prp dob nmod det punct
+dep 
+loc pob punct sub nmod dob nmod root adv vmod adv det dob nmod nmod vmod vmod nmod pob nmod pob nmod nmod nmod coord conj dob prp vmod dob nmod nmod punct
+sub adv adv root det dob nmod nmod vmod vmod nmod nmod vmod punct nmod punct prp vmod dob nmod vmod punct
+det sub loc pob punct nmod punct adv root dob nmod nmod punct
+sub nmod conj det punct nmod punct adv root det dob nmod nmod punct coord adv conj det dob nmod loc pob amod nmod punct
+sub adv root vmod pob punct det pob loc pob punct loc sub nmod adv nmod vmod tmp nmod punct
+root sub nmod vmod vmod dob punct
+tmp pob det sub nmod nmod dob nmod punct nmod nmod nmod vmod adv dep vmod punct dep sub nmod nmod nmod punct nmod det adv root dob nmod nmod nmod pob nmod nmod punct
+det sub nmod nmod root dob nmod punct nmod det nmod punct coord conj nmod dob nmod nmod punct coord adv adv conj vmod dob nmod punct
+sub root dep dep sub nmod adv vmod dob nmod nmod nmod tmp punct prp sub adv dep vmod vmod loc det pob nmod nmod punct
+dep adv root dob prp vmod vmod coord conj conj dob nmod nmod pob nmod nmod det punct coord det sub loc pob pob tmp amod vmod conj prp pob det punct
+root nmod punct sub amod dep amod nmod
+dep sub root vmod dob nmod coord conj nmod nmod prp pob punct sub amod dep dob nmod punct
+dep tmp det pob nmod dob nmod loc pob punct sub nmod adv root vmod dob coord det nmod nmod nmod prp vmod dob punct
+sub root sub nmod nmod nmod vmod mnr pob nmod punct
+tmp pob sub adv root vmod vmod pob nmod dob nmod vmod punct nmod punct punct coord coord conj pob nmod vmod loc nmod pob punct
+tmp pob sub nmod nmod loc pob nmod dob nmod tmp pob det nmod det punct sub nmod nmod coord conj nmod punct nmod punct adv root dob punct
+sub nmod nmod punct nmod punct root vmod det dob nmod punct adv nmod vmod loc pob tmp det pob det punct nmod det prp vmod sub adv adv vmod vmod dob nmod nmod pob nmod punct
+sub nmod pob root dep prp sub conj vmod vmod dob nmod punct coord punct sub nmod pob nmod nmod nmod det adv conj vmod vmod vmod dob nmod vmod det pob nmod nmod dob nmod punct punct
+adv nmod pob det punct sub adv root det dob nmod nmod det pob punct adv nmod vmod tmp det loc pob nmod nmod punct nmod punct punct prp vmod sub adv vmod dob nmod nmod vmod det nmod det pob punct
+sub root coord vmod vmod punct
+sub nmod vmod nmod pob root vmod pob nmod vmod nmod vmod punct
+dep sub adv root coord vmod conj dob nmod dob punct det sub nmod vmod coord conj nmod loc pob adv dep vmod sub vmod dob amod nmod nmod dob nmod nmod coord nmod punct amod nmod amod pob det punct
+det sub nmod nmod nmod pob adv root vmod loc pob coord conj prp vmod sub det adv adv vmod vmod dob punct
+sub root det dob nmod
+det sub nmod nmod nmod det pob nmod nmod loc pob adv root vmod tmp det pob det nmod det mnr loc pob loc pob punct
+sub det sub nmod det pob nmod amod nmod pob adv root vmod pob nmod sub nmod punct punct nmod nmod vmod nmod punct coord conj vmod mnr pob nmod pob tmp det pob punct
+tmp det pob punct nmod det punct nmod x punct nmod sub nmod coord conj adv adv root sub vmod vmod dob coord sub conj adv dob nmod nmod tmp punct
+sub nmod loc pob nmod vmod mnr pob root dob vmod vmod pob pmod pob nmod amod punct
+sub root vmod
+det sub nmod dob iob pob nmod tmp pob root dep amod vmod nmod nmod loc pob vmod dep sub det amod vmod amod punct
+mnr amod det pob nmod loc pob punct root vmod dob loc pob punct pmod sub tmp nmod vmod vmod pob nmod nmod det pob nmod nmod loc pob loc det pob loc pob nmod vmod nmod vmod vmod det pob nmod nmod punct
+dep punct tmp dep sub root det dob nmod prp vmod dob nmod nmod vmod punct coord sub adv conj vmod tmp punct mnr det pob nmod pob punct
+sub det root dob nmod punct
+nmod det sub nmod punct coord det conj adv nmod coord conj adv tmp det punct x adv root adv nmod det dob punct sub nmod nmod vmod vmod coord vmod dob nmod punct
+dep root vmod punct sub det adv dep vmod nmod dep nmod sub adv nmod vmod pob nmod vmod vmod vmod nmod amod tmp pob det punct
+punct pmod pob nmod dob nmod nmod pob punct sub root dob iob dep sub adv vmod vmod amod coord conj amod punct punct sub dep punct
+punct sub nmod pob nmod nmod nmod nmod pob nmod det pob loc pob pob amod vmod root vmod punct coord amod amod dep amod amod vmod punct punct sub punct nmod nmod nmod pob nmod coord conj nmod loc pob nmod nmod dep vmod punct
+punct adv vmod pob vmod adv vmod dob nmod nmod loc pob nmod tmp dep pob det coord sub nmod vmod adv adv conj punct adv root dep sub adv adv vmod adv dob nmod punct nmod det sub nmod nmod vmod punct nmod punct nmod punct nmod punct nmod punct coord nmod det punct adv adv vmod vmod dob nmod nmod pob nmod pob nmod dob nmod vmod loc pob punct punct sub dep vmod pob tmp amod punct
+sub adv root punct dob punct nmod pob nmod vmod
+root vmod nmod nmod amod nmod pob punct sub vmod dob nmod nmod coord conj nmod prp vmod adv dob nmod punct
+tmp sub nmod nmod nmod loc det pob nmod nmod punct nmod loc loc sub nmod nmod det dob punct det nmod punct punct dep sub adv root vmod adv punct
+dep loc pob punct sub nmod amod loc pob nmod root vmod nmod det sub adv vmod vmod dob nmod nmod punct nmod nmod nmod nmod nmod det punct nmod adv det dob nmod punct
+dep dep dep sub cnd det dob det vmod det pob punct coord root det dob nmod punct sub tmp dep pob adv nmod vmod vmod pob nmod dob nmod punct
+tmp pob nmod nmod nmod nmod tmp pob nmod det punct sub nmod root sub punct adv vmod punct vmod pob nmod punct coord tmp pob det sub adv adv conj vmod loc pob punct
+root det 
+dep punct sub det adv root vmod pob nmod nmod nmod pob coord conj nmod nmod nmod punct sub nmod det vmod sub nmod punct
+sub adv adv root dob nmod dob nmod dob nmod mnr pob nmod punct coord tmp dep pob adv conj det dob nmod punct
+dep punct tmp det pob det punct sub adv root det det dob det det nmod nmod amod tmp det pob punct
+det sub nmod nmod nmod nmod adv root det dob nmod vmod coord conj vmod vmod pob punct
+dep dep tmp pob punct nmod sub nmod loc loc pob nmod nmod adv root vmod det tmp punct
+root nmod nmod
+sub adv adv root dob nmod nmod nmod vmod nmod dob nmod punct
+sub det adv root dob nmod nmod pob nmod punct amod nmod vmod pob nmod vmod pob coord conj vmod pob punct
+root vmod pob
+dep adv conj dob nmod vmod punct coord sub loc pob nmod nmod coord det conj nmod nmod pob nmod root adv dep sub det sub vmod vmod pob nmod pob punct
+sub root dep sub adv vmod amod vmod vmod vmod dob punct
+root nmod vmod vmod vmod pob dep sub det nmod adv dob nmod iob pob nmod det nmod nmod pob punct adv nmod vmod coord conj dob punct
+sub nmod nmod punct sub adv nmod vmod vmod pob vmod dob nmod nmod punct adv root nmod sub vmod punct
+adv pob nmod pob punct det sub adv root tmp det pob nmod nmod det punct
+root nmod pob nmod dob nmod
+sub nmod nmod pob nmod dob nmod adv root dob nmod pob punct
+sub nmod pob root vmod pob nmod vmod punct
+mnr det amod nmod punct sub nmod adv root det dob nmod nmod vmod vmod nmod coord det nmod punct
+dep sub det adv root adv coord adv conj vmod punct
+tpc nmod pob coord conj punct sub nmod det nmod pob amod root prp vmod adv dob nmod punct
+sub root det dob nmod det nmod nmod adv nmod det sub nmod vmod punct
+dep punct tmp pob nmod punct sub nmod pob amod root x sub nmod pob amod dep punct
+dep root nmod vmod coord conj vmod det pob nmod punct
+tmp det pob nmod punct sub adv nmod tmp adv root adv vmod punct
+root dob nmod vmod adv punct
+sub root adv vmod dob nmod vmod punct
+root nmod punct adv adv nmod sub nmod det vmod tmp punct
+punct sub det amod root amod pob nmod sub nmod dob nmod nmod punct punct sub nmod nmod dep punct
+sub nmod nmod nmod nmod nmod nmod root sub nmod nmod adv adv vmod vmod det dob nmod punct
+sub root dob nmod nmod pob x punct
+det sub tmp adv root dob vmod det pob adv nmod adv dob det coord adv conj dob prp vmod det det dob adv nmod dob punct
+pmod pob nmod amod punct sub nmod adv root vmod tmp sub nmod pob nmod adv nmod prp adv dob punct sub dep punct punct sub vmod adv dob vmod dob tmp pob nmod dob vmod pob nmod amod tmp punct dep amod prd punct punct adv adv dep vmod pob nmod coord sub adv adv conj vmod tmp punct
+sub nmod punct nmod nmod nmod punct tmp adv root vmod prp vmod dep sub vmod vmod vmod dob nmod adv adv punct
+sub nmod adv root dob vmod dep sub nmod pob adv vmod vmod punct coord dep sub adv vmod vmod pob tmp punct adv vmod dob coord tmp adv conj vmod vmod adv punct
+root adv vmod coord punct coord vmod conj prp pob nmod punct
+punct tpc dep det det pob sub nmod punct adv root dob det vmod nmod det pob nmod punct punct sub dep punct
+tmp pob nmod dep sub adv root vmod dob punct
+det sub nmod vmod det pob nmod nmod nmod loc pob root vmod tmp pob nmod det pmod pob det sub nmod punct adv vmod vmod dob nmod vmod dob nmod vmod punct coord sub adv adv conj nmod det dob nmod loc det pob punct
+tpc pob nmod punct det sub nmod adv root vmod coord sub conj det dob nmod nmod nmod loc pob tmp det pob punct
+dep sub nmod root vmod amod vmod pob punct
+adv pob nmod sub adv vmod vmod vmod punct sub nmod root vmod dob nmod vmod coord adv conj prp pob det punct
+adv adv root nmod punct nmod nmod dob prp vmod adv dob nmod nmod nmod pob nmod vmod sub adv nmod vmod vmod amod nmod amod nmod punct sub nmod nmod nmod dep vmod pob punct
+sub root det dob nmod nmod nmod pob loc nmod pob coord conj nmod amod nmod pob nmod pob punct punct dep sub amod prd amod punct sub nmod nmod det sub adv vmod vmod det dob tmp tmp punct
+sub adv root det sub nmod nmod adv vmod vmod mnr vmod punct
+root nmod punct nmod vmod dob
+dep mnr amod punct sub adv root vmod vmod nmod vmod pob nmod coord conj det dob coord conj nmod punct
+sub nmod adv root loc pob nmod nmod adv nmod dob nmod nmod nmod pob tmp nmod nmod punct
+punct sub punct nmod nmod punct root dob nmod amod amod nmod pob nmod nmod punct punct det sub loc pob nmod loc pob dep punct
+sub nmod nmod pob root amod amod amod punct
+root vmod pob nmod nmod punct sub nmod adv vmod det dob det tmp tmp pob nmod nmod tmp pob nmod det coord conj det dob nmod punct
+root vmod
+sub nmod nmod nmod nmod loc pob tmp root adv dob dep sub adv vmod dob punct
+punct tmp pob nmod nmod punct sub nmod adv root vmod dob nmod nmod punct sub punct nmod nmod loc pob nmod nmod pob nmod pob nmod loc pob dep punct
+dep root dob nmod det dob nmod det tmp punct sub adv vmod nmod det dob nmod tmp pob punct vmod amod det amod vmod vmod pob nmod punct sub adv amod vmod vmod prp pob nmod punct
+sub nmod nmod root sub nmod adv vmod vmod sub vmod det dob nmod prp adv vmod dob punct
+det sub loc pob nmod nmod nmod tmp root dob det punct vmod dep sub adv vmod dob nmod vmod det nmod nmod nmod prp vmod dob punct vmod vmod conj dob nmod nmod punct
+punct sub nmod det nmod root dob nmod dep sub nmod amod vmod vmod det pob nmod nmod punct punct sub punct nmod nmod nmod nmod loc pob nmod punct adv dep vmod pob punct
+root punct det prd nmod nmod tmp nmod pob punct
+sub nmod nmod pob nmod punct nmod dob vmod vmod coord conj loc pob punct adv root dob vmod pob nmod nmod nmod punct prp sub nmod nmod dep vmod tmp pob amod nmod punct
+punct root dob punct vmod vmod vmod pob nmod coord conj dob vmod det dob nmod pob nmod tmp nmod pob punct punct
+sub adv root det det dob nmod det tmp punct det nmod det nmod punct
+sub nmod x root dep det sub adv vmod vmod coord adv conj dob punct sub punct det nmod nmod nmod nmod punct sub adv nmod loc pob nmod tmp dep punct punct sub vmod dob prp vmod dob nmod punct prp sub nmod adv dep adv dob punct punct
+sub nmod vmod dob adv adv root vmod dob nmod nmod dep pob punct nmod vmod vmod pob nmod vmod dob nmod nmod vmod tmp det pob nmod pob nmod vmod dob nmod punct
+adv pob nmod vmod coord conj dob punct det sub root dep sub adv vmod dob nmod vmod pob nmod vmod dob punct vmod vmod dob nmod nmod loc pob punct
+root vmod vmod
+prp pob det punct sub tmp nmod root adv vmod dob nmod nmod punct
+root dob nmod nmod det punct sub adv vmod punct tmp punct nmod det sub loc det pob adv nmod dob nmod adv vmod vmod vmod tmp pob nmod nmod nmod tmp pob det punct
+dep punct sub nmod adv root dob nmod mnr det pob nmod punct tmp sub nmod coord conj nmod vmod vmod loc punct
+sub root det dob nmod nmod prp pob punct
+sub root det dob nmod nmod prp pob punct sub dep vmod vmod det pob nmod prp nmod pob nmod punct
+sub nmod nmod punct det nmod punct root loc pob nmod nmod punct sub nmod dep vmod tmp pob det punct
+sub nmod nmod det punct nmod pob nmod det nmod punct root vmod tmp pob nmod pob punct
+adv adv root dob nmod loc pob tmp nmod det pob punct tmp pob det sub nmod vmod nmod vmod loc pob nmod nmod amod tmp nmod det punct
+det sub nmod adv root dob nmod punct mnr pob nmod punct
+sub punct nmod nmod dob nmod det det nmod punct adv root det dob nmod tmp pob sub nmod punct
+amod mnr nmod amod nmod punct sub adv root tmp nmod pob nmod dob nmod punct vmod vmod tmp vmod det pob punct nmod vmod nmod dob punct
+dep tmp det pob nmod punct adv root dob nmod loc pob nmod tmp pob nmod det punct
+sub root vmod prp nmod pob nmod nmod dob coord conj nmod sub adv nmod adv punct
+dep tmp nmod det root dob nmod amod dep det sub adv nmod vmod loc pob nmod nmod nmod pob punct
+det det sub loc nmod pob adv root loc tmp pob det punct nmod sub nmod pob det dep sub nmod nmod pob nmod adv vmod punct
+sub tmp root dob vmod pob punct tmp pob nmod vmod vmod tmp pob det punct
+tmp nmod det punct sub nmod adv root dep det dob coord conj loc pob tmp pob nmod dob vmod nmod punct
+punct sub root vmod vmod coord conj amod prp vmod dob punct punct sub nmod dep dob sub nmod punct
+root nmod nmod punct dep nmod nmod nmod nmod pob
+tmp nmod det punct sub amod root amod amod nmod loc pob punct
+sub nmod root amod loc punct sub dep adv coord sub conj det dob nmod nmod vmod nmod pob punct
+punct sub adv root dob nmod punct punct sub punct det nmod loc pob nmod nmod nmod dep vmod punct
+mnr nmod amod loc pob nmod nmod vmod vmod pob nmod pob det punct sub det root dob coord sub nmod sub det nmod adv adv conj vmod adv punct
+dep tmp nmod det punct sub root dob nmod nmod nmod nmod nmod nmod punct coord sub nmod adv conj det dob punct
+root vmod
+nmod det tmp nmod punct sub root sub vmod vmod vmod nmod nmod amod pob punct
+sub adv root vmod coord conj punct vmod dob vmod det pob nmod vmod nmod vmod loc tmp pob det punct tmp pob det sub nmod amod nmod punct
+sub adv root coord conj nmod sub vmod loc det pob nmod pob punct coord conj vmod vmod coord conj dob nmod loc pob punct
+dep sub nmod adv root adv punct
+punct sub adv root sub nmod adv vmod adv punct punct dep nmod punct nmod nmod coord conj nmod loc pob nmod loc pob punct
+sub det sub dep nmod dep sub vmod vmod dep adv root sub vmod vmod punct sub dep punct vmod dob loc pob nmod nmod nmod vmod punct nmod coord conj punct
+nmod det sub loc pob punct nmod sub nmod pob det dep vmod sub adv vmod vmod punct adv vmod root vmod loc tmp pob nmod dob nmod nmod punct prp sub nmod nmod adv dep vmod pob coord adv conj vmod punct
+sub nmod vmod loc pob root vmod punct x cnd dob nmod nmod coord sub conj adv sub adv vmod amod mnr punct punct sub nmod dep punct
+det sub coord conj loc nmod amod adv root vmod vmod adv mnr dob sub nmod punct
+loc pob sub nmod nmod nmod punct nmod nmod nmod nmod nmod nmod punct root sub nmod nmod nmod amod adv vmod punct dob nmod punct punct
+sub nmod pob root vmod pob vmod det pob nmod nmod coord det sub conj vmod pob nmod nmod punct nmod vmod punct punct nmod dob nmod coord conj vmod punct dob nmod punct
+dep tmp pob nmod sub root sub nmod nmod loc pob punct det sub nmod det nmod nmod vmod nmod det punct adv vmod vmod pob nmod x punct
+root dob
+det sub nmod vmod adv adv punct pmod det pob punct root dob dep adv nmod vmod tmp nmod pob loc pob adv nmod dob nmod punct adv adv vmod nmod dob loc pob punct
+punct root dob dep sub adv vmod loc pob nmod tmp tmp pob sub nmod nmod vmod punct punct pmod pob nmod punct nmod nmod nmod pob nmod loc pob nmod punct sub nmod dob nmod loc pob punct
+dep prp det sub adv cnd vmod punct sub root vmod punct coord conj dep sub adv conj vmod dob nmod nmod nmod nmod pob nmod pob nmod dob nmod nmod pob
+punct root dob nmod nmod nmod nmod pob nmod dob punct
+root vmod nmod det tmp pob nmod det punct sub nmod nmod vmod nmod loc pob adv vmod adv nmod det dob punct
+tmp det sub nmod loc tmp adv nmod loc punct sub nmod root vmod loc pob det nmod coord conj nmod nmod dob coord conj nmod punct
+dep root adv punct sub nmod vmod punct dep det sub nmod nmod loc pob nmod nmod pob tmp pob adv vmod vmod vmod vmod pob nmod loc pob punct
+punct sub nmod tmp pob root vmod vmod punct det tmp nmod sub dep dob punct punct sub dep adv punct
+punct root sub nmod dob nmod punct
+sub pob nmod nmod nmod nmod pob sub nmod dob root vmod det dob nmod nmod pob nmod nmod pob nmod pob nmod punct dep adv nmod sub nmod coord conj vmod vmod vmod vmod vmod punct
+punct det sub nmod nmod vmod root vmod vmod dob nmod nmod pob nmod dob loc pob coord xmdp tmp pob adv conj vmod dob punct nmod nmod nmod punct tmp pob punct punct sub nmod punct nmod nmod nmod loc pob nmod nmod nmod punct dep vmod pob punct
+det sub nmod tmp pob adv root det dob nmod nmod pob nmod nmod punct
+loc pob sub adv adv root punct
+det sub root vmod prp vmod dob punct coord sub nmod conj vmod tmp det sub nmod vmod prp vmod vmod vmod dob punct
+root prd amod prd loc det pob nmod loc pob punct dep sub adv conj dob nmod coord conj nmod prp vmod vmod punct coord nmod sub nmod vmod coord conj conj vmod dob loc nmod punct
+mnr nmod amod loc pob punct sub adv root vmod pob nmod nmod loc pob punct
+punct sub det root tmp sub nmod dob nmod punct
+tmp punct sub root vmod dob tmp sub nmod nmod nmod nmod vmod
+sub nmod adv root det dob nmod vmod vmod tmp sub nmod nmod dob nmod nmod vmod punct
+sub nmod root dob vmod det sub vmod vmod punct prp vmod dob nmod nmod punct punct
+sub adv root dob nmod loc nmod tmp det pob coord conj vmod tmp sub nmod vmod vmod coord conj det nmod punct
+sub det root vmod adv tmp sub nmod dob nmod tmp pob nmod amod tmp det pob nmod punct
+root det sub nmod nmod vmod vmod tmp pob punct vmod dob tmp pob det tmp tmp pob det nmod det dob punct
+sub root dob nmod nmod vmod amod tmp pob nmod punct
+sub nmod adv root dob punct
+sub root loc pob nmod tmp pob nmod punct punct sub adv vmod dob punct sub dep vmod det dob prp vmod vmod vmod punct sub vmod nmod vmod dob nmod punct
+punct sub root coord det sub conj vmod vmod pob punct
+sub root vmod punct punct sub nmod adv vmod det dob nmod nmod punct nmod punct nmod coord nmod dob punct
+sub root vmod pob nmod nmod nmod vmod vmod vmod punct
+nmod sub adv root dob nmod pob nmod tmp sub nmod nmod punct nmod nmod det punct nmod pob nmod vmod
+sub adv root sub nmod nmod vmod vmod tmp pob det vmod det dob coord conj nmod det dob tmp pob punct
+dep punct sub nmod dob nmod nmod adv root vmod vmod pob sub nmod tmp adv nmod vmod vmod pob nmod det tmp nmod det punct
+det sub nmod loc pob punct nmod dob nmod punct root dob tmp det pob pmod det pob nmod nmod det tmp punct
+tmp pob sub root vmod pob nmod nmod nmod vmod mnr pob nmod vmod dob loc pob nmod loc pob tmp pob det punct
+sub root tmp pob dep adv vmod det tmp tmp pob nmod amod vmod vmod vmod adv punct
+sub root vmod dob nmod nmod amod tmp pob det punct
+sub root dob nmod nmod nmod nmod pob tmp pob coord sub nmod conj dob vmod loc coord conj vmod tmp nmod punct
+loc pob punct sub nmod root sub vmod vmod dob nmod nmod amod iob pob nmod tmp pob sub nmod vmod dob nmod nmod vmod pob sub amod nmod dep sub amod vmod vmod tmp sub nmod vmod det dob punct
+sub nmod root loc vmod tmp pob nmod punct
+sub nmod root vmod nmod det amod det pob nmod vmod tmp pob det punct
+tmp pob sub nmod nmod sub vmod dob punct sub nmod root vmod dob nmod nmod nmod det nmod pob punct nmod vmod vmod loc vmod vmod loc pob punct
+sub tmp amod nmod pob root vmod sub nmod nmod nmod nmod pob nmod det nmod nmod vmod vmod det tmp pob det punct prd amod amod nmod tmp nmod punct
+sub adv root vmod sub nmod vmod det dob nmod coord nmod nmod nmod punct nmod punct nmod punct nmod punct nmod nmod conj vmod det vmod nmod nmod tmp pob det pmod pob det punct
+sub punct nmod nmod nmod pob loc pob punct root sub nmod amod vmod vmod vmod sub dep vmod punct
+punct nmod tmp sub nmod vmod vmod vmod vmod punct sub root dep sub nmod punct nmod coord conj nmod nmod loc pob punct vmod vmod dob punct punct sub dep punct
+root nmod
+sub root vmod adv vmod dob nmod coord conj nmod pob punct
+mnr pob nmod nmod coord conj punct sub root dob vmod pob nmod nmod nmod coord conj nmod nmod amod punct
+sub nmod coord conj nmod tmp pob amod amod root amod pob adv nmod vmod coord conj prp vmod punct
+sub nmod loc adv root vmod det pob nmod nmod coord nmod nmod nmod amod nmod pob nmod det pob nmod punct
+root
+adv pob nmod vmod loc nmod punct sub nmod root loc adv vmod det dob nmod nmod pob punct nmod dob nmod nmod nmod nmod punct adv nmod vmod dob nmod nmod nmod punct
+sub nmod nmod det amod nmod loc amod nmod root vmod loc pob nmod nmod nmod vmod punct dob nmod nmod nmod amod amod punct tmp pob det punct
+pmod pob adv nmod loc nmod prp vmod punct det sub nmod nmod loc nmod root adv dob nmod nmod nmod pob nmod coord conj nmod nmod punct
+root
+sub root vmod nmod tmp nmod nmod nmod det pob nmod nmod vmod vmod dob nmod coord conj nmod pob nmod punct
+sub nmod nmod det adv root loc nmod nmod det ext nmod vmod punct
+dep cnd amod pob coord conj punct sub adv root punct dob nmod nmod nmod punct nmod nmod nmod coord conj nmod nmod punct
+root
+sub root vmod nmod nmod nmod nmod pob nmod nmod pob nmod nmod amod loc pob nmod punct nmod amod amod nmod nmod amod amod punct
+sub adv adv root dob nmod nmod nmod nmod loc nmod punct nmod nmod nmod dob nmod nmod coord conj nmod nmod nmod punct
+root
+sub nmod det root dep prp pob nmod nmod nmod coord prp det pob coord conj nmod nmod punct
+sub nmod root vmod sub nmod det vmod amod pob nmod dob punct amod amod pob nmod nmod vmod nmod dob nmod nmod punct
+sub nmod root dob iob det dob nmod nmod nmod
+sub loc pob nmod nmod dir pob root dir pob nmod loc pob nmod pmod pob nmod dep vmod tmp pob det nmod det punct
+sub nmod adv vmod root det dob nmod nmod punct tmp adv adv nmod adv tmp pob nmod det punct
+sub nmod adv vmod root det dob nmod nmod punct tmp det sub nmod nmod loc pob dep conj adv nmod adv tmp nmod det punct
+root vmod vmod vmod prp sub nmod coord conj iob pob nmod amod dep punct sub nmod nmod dep punct
+root vmod vmod det dob nmod det pob nmod prp sub dep adv punct sub dep adv punct
+root nmod nmod
+tmp pob sub nmod vmod tmp pob det prp vmod vmod dob punct sub adv root nmod dob nmod nmod mnr det pob punct nmod vmod punct nmod vmod vmod pob punct coord conj vmod punct
+prp vmod adv dob nmod nmod punct sub root vmod mnr pob nmod loc pob coord conj vmod punct
+tmp pob det punct sub nmod nmod pob coord nmod vmod adv root adv dob iob pob
+sub punct nmod nmod nmod nmod vmod nmod punct root vmod sub adv nmod loc vmod vmod prp dob punct vmod dob loc pob nmod nmod punct
+sub det sub nmod loc coord conj loc pob root dob nmod nmod pob nmod dir pob tmp pob nmod vmod tmp punct sub det nmod nmod loc pob dep punct
+dep punct sub nmod nmod loc pob amod prd adv root dob nmod nmod pob punct sub dep adv punct
+sub nmod nmod nmod punct nmod dob nmod nmod loc pob punct root vmod det sub vmod vmod vmod prp vmod vmod dob prp vmod loc nmod nmod punct loc sub nmod nmod det tmp nmod amod amod punct
+pmod pob det punct det sub nmod nmod tmp det nmod det root vmod sub adv vmod dob coord conj dob nmod loc pob punct
+sub nmod nmod nmod nmod root xmdp sub vmod vmod vmod loc pob dep sub adv nmod dob loc pob punct coord sub adv conj vmod loc pob nmod nmod loc pob nmod nmod punct
+tmp pob nmod loc tmp pob nmod loc dir loc tmp det nmod det punct sub nmod root vmod sub adv vmod adv dob nmod nmod pob nmod loc pob tmp pob nmod dob punct
+root loc punct sub adv vmod sub nmod vmod vmod coord conj nmod sub adv vmod punct
+punct nmod nmod sub adv root adv dob nmod det det nmod punct det nmod punct det tmp punct nmod det det nmod punct det nmod punct tmp det pob nmod punct pmod pob nmod vmod vmod punct punct punct sub dep adv punct
+root vmod nmod punct nmod
+tmp sub nmod vmod pob nmod adv adv vmod vmod punct sub nmod coord conj root vmod vmod dob nmod nmod tmp det
+nmod sub root sub adv vmod adv dob nmod loc pob nmod loc pob punct
+sub punct nmod nmod nmod nmod nmod punct root vmod det sub nmod vmod prp vmod vmod vmod dob punct
+sub nmod loc root vmod dob nmod punct nmod dob nmod punct nmod nmod punct nmod nmod coord conj dob nmod punct
+prp vmod vmod dob punct sub nmod root sub nmod nmod nmod coord conj nmod vmod prp vmod dob nmod vmod nmod nmod pob nmod pob nmod coord conj punct
+sub det root sub nmod loc vmod vmod vmod amod punct
+x punct det sub nmod pob nmod adv root dob nmod nmod loc nmod pob punct coord adv conj vmod dob nmod nmod nmod vmod nmod prp vmod punct
+det sub nmod root vmod tmp sub 
+sub nmod nmod vmod root loc pob nmod tmp pob det punct det tmp tmp pob sub nmod nmod nmod vmod dob nmod nmod nmod nmod amod det punct
+prp sub nmod nmod det dep vmod punct sub nmod nmod adv root vmod dob loc nmod pob loc pob loc sub nmod nmod vmod punct prp vmod vmod dob mnr pob nmod det dob nmod amod amod vmod punct
+tmp pob punct sub adv root vmod punct dob det punct coord punct nmod nmod punct punct
+adv root dob nmod vmod nmod det dob loc pob punct coord sub adv conj adv vmod tmp nmod det sub nmod nmod vmod loc pob nmod punct nmod pmod det pob nmod nmod amod tmp pob nmod punct
+sub nmod root sub nmod nmod vmod amod vmod coord conj dob nmod punct
+det sub root dob nmod punct vmod nmod punct nmod nmod punct dep dep nmod vmod vmod nmod punct
+sub root det punct nmod sub vmod dep vmod dob punct coord sub vmod conj adv nmod tmp nmod punct punct sub nmod nmod punct det nmod dep punct
+tmp pob det punct det sub nmod adv root vmod det dob nmod nmod amod punct
+dep det sub nmod pob nmod nmod nmod nmod punct coord conj nmod nmod punct root det sub vmod amod coord conj dob nmod vmod nmod coord adv conj vmod punct dob nmod punct prp dob punct
+sub root vmod dob tmp det prp pob nmod
+det sub nmod root dob vmod vmod dob nmod dob nmod nmod det nmod loc pob punct nmod tmp det nmod det nmod det
+sub nmod nmod nmod det nmod pob vmod root vmod prp pob nmod punct sub nmod dep tmp pob det punct
+sub nmod det nmod tmp root tmp pob det loc pob vmod vmod nmod nmod det nmod pob punct coord det sub nmod nmod pob conj vmod tmp nmod det vmod sub adv vmod vmod punct
+punct sub det amod root coord conj tmp pob sub nmod nmod nmod vmod vmod punct punct sub nmod nmod dep loc pob punct vmod dep adv vmod dob adv nmod punct
+sub adv root nmod det dob nmod nmod punct nmod det pob nmod vmod punct mnr pob nmod pob nmod punct
+sub nmod dob nmod nmod det root vmod tmp tmp det tmp pob det prp pob punct prp pob nmod nmod pob nmod det punct
+sub nmod nmod root vmod vmod dob tmp det pob nmod vmod punct tmp sub nmod dob nmod det nmod vmod tmp pob nmod det punct
+sub nmod root vmod dob tmp det punct coord sub nmod nmod nmod nmod conj tmp pob det sub nmod tmp pob nmod dob nmod vmod vmod dob nmod punct
+sub nmod det adv root dob nmod nmod det tmp pob det punct tmp det pob nmod punct
+det sub nmod root vmod tmp pob sub nmod nmod nmod vmod dep loc pob punct tmp pob det sub nmod nmod pob nmod loc pob nmod vmod punct
+adv pob tmp nmod det punct sub nmod det adv root dob nmod nmod tmp pob nmod det dob nmod punct det nmod loc pob punct det nmod loc pob coord det conj loc pob punct tmp det pob nmod nmod punct
+sub nmod root dob nmod tmp pob nmod
+det sub nmod punct nmod nmod det pob punct root vmod pob nmod nmod prp sub nmod nmod dep tmp det punct
+nmod sub nmod amod root amod pob nmod nmod nmod prp vmod vmod tmp pob nmod nmod punct nmod punct nmod punct
+sub loc pob adv root vmod nmod det dob nmod punct coord conj loc prp nmod dob nmod nmod amod det tmp punct
+det sub root vmod dob nmod nmod nmod prp vmod vmod pob loc pob punct coord tmp adv conj dob nmod punct nmod punct
+nmod tmp punct sub nmod nmod nmod nmod nmod coord conj punct nmod nmod punct nmod punct root nmod det dob nmod nmod vmod vmod pob coord conj nmod punct
+root pob punct
+sub root det dob nmod adv nmod vmod tmp nmod det coord conj det tmp sub nmod vmod loc pob punct
+sub 
+tmp pob nmod nmod punct sub nmod nmod adv root det dob nmod nmod punct vmod nmod dob vmod vmod pob punct
+det sub nmod det adv root vmod pob loc pob mnr dep det sub nmod loc det pob loc pob punct
+sub adv root nmod dob nmod coord nmod conj nmod det punct tmp det pob loc pob coord det conj loc pob nmod punct
+punct sub adv root loc tmp det tmp coord sub det adv conj tmp pob det nmod det punct punct sub nmod dep vmod punct
+sub nmod nmod punct dep adv nmod dob nmod nmod det nmod det tmp punct adv root vmod punct vmod amod vmod vmod det pob nmod punct
+sub nmod punct nmod nmod nmod nmod nmod pob nmod nmod nmod nmod punct nmod punct root vmod pob nmod dep amod vmod amod vmod dob nmod punct
+tmp pob adv root det dob nmod det punct sub nmod dep vmod punct
+punct dep sub adv root adv dob punct nmod sub nmod nmod adv dep adv punct punct sub dep adv punct
+punct dep punct nmod sub nmod root amod pob nmod loc tmp pob det punct
+tmp sub nmod pob nmod root nmod det dob loc pob coord conj mnr pob nmod punct
+det sub nmod adv root dob amod pob nmod dob nmod punct pmod pob nmod punct
+pmod pob det punct sub nmod adv root dob nmod punct vmod mnr pob punct
+sub nmod nmod vmod root dob dir loc
+tmp det punct sub nmod adv root nmod det dob nmod punct nmod nmod pob nmod punct x nmod loc pob punct nmod punct nmod coord conj punct
+tpc pob nmod punct nmod nmod nmod nmod punct det sub nmod vmod vmod adv root vmod adv prp pob punct
+tmp nmod det punct sub root tmp nmod sub nmod adv nmod dob nmod loc pob punct
+dep punct nmod sub nmod adv adv root dob nmod loc pob coord conj punct
+prp sub adv dep punct sub adv root vmod pob nmod coord conj prp sub dep loc tmp amod amod punct
+det sub nmod nmod root dob nmod coord conj dob prp dob dir loc
+sub adv root det dob nmod prp vmod nmod det dob coord conj dir loc loc pob tmp nmod det punct tmp pob sub nmod nmod nmod nmod dob punct
+sub loc pob nmod nmod amod root amod loc pob nmod punct
+nmod sub coord conj nmod root vmod loc pob nmod tmp tmp pob nmod dob nmod nmod punct
+sub adv root nmod dob prp vmod dob nmod prp det dob coord conj dir pob pmod pob punct sub nmod punct nmod nmod nmod nmod punct dep vmod pob nmod punct
+det sub adv root dob nmod amod pob nmod tmp det pob nmod pob nmod punct
+tmp pob nmod loc pob nmod nmod nmod loc nmod nmod punct sub root vmod loc nmod vmod punct
+punct sub nmod nmod adv root vmod pob prp vmod sub coord conj vmod dob nmod nmod nmod dir det pob nmod nmod nmod coord conj vmod loc tmp pob nmod det punct tmp pob nmod dob nmod nmod punct punct sub nmod punct
+root nmod punct nmod
+sub nmod root sub nmod nmod pob vmod vmod dob nmod nmod punct prp adv dep nmod det sub nmod adv vmod loc pob punct
+dep cnd det dob punct root vmod amod prd amod nmod amod nmod punct sub dep punct
+adv pob nmod dob nmod punct nmod adv nmod vmod vmod vmod vmod punct sub adv root dob sub nmod punct
+punct dep punct sub root vmod dob iob pob prp sub vmod dep punct punct sub dep vmod punct
+dep sub nmod adv root dob nmod nmod iob pob nmod adv nmod adv loc prp vmod punct sub nmod det amod dep amod amod nmod punct sub nmod dep punct
+tmp nmod vmod punct sub adv root dob nmod prp dob coord conj nmod punct
+root dob nmod
+nmod sub nmod loc pob adv root dob nmod dob nmod nmod prp pob nmod pob punct
+sub nmod nmod det pob nmod nmod nmod vmod loc pob root dep det sub nmod pob adv vmod nmod det dob nmod punct
+dep cnd vmod dob coord conj punct sub adv root nmod det dob nmod punct
+root vmod prp vmod dob vmod vmod vmod dob nmod nmod pob nmod det punct
+sub nmod nmod root dir loc tmp pob nmod vmod vmod pob nmod punct
+sub adv root loc punct nmod loc det pob nmod nmod nmod punct tmp pob nmod vmod amod pob tmp pob det punct
+sub root tmp pob det dep sub nmod adv vmod vmod loc pob tmp pob vmod sub nmod vmod dob dob nmod loc pob punct
+pmod pob nmod nmod nmod nmod nmod punct nmod punct sub det root vmod prp sub punct nmod nmod dob loc pob punct adv vmod dep coord conj dob nmod nmod punct
+sub root vmod dob nmod pob nmod tmp pob nmod loc coord conj dob nmod punct
+punct sub root det dob nmod amod nmod punct det sub loc pob nmod dep vmod dob punct coord sub conj vmod dob vmod vmod vmod nmod coord conj nmod punct punct sub dep vmod pob tmp pob nmod nmod tmp nmod pob nmod loc pob
+sub root amod pob nmod
+sub det nmod nmod root vmod pob tmp pob nmod nmod pob loc pob tmp pob coord conj pob nmod nmod pob tmp nmod nmod punct
+tmp pob det punct sub det root dob nmod vmod vmod pob loc pob nmod dir pob nmod punct
+tmp pob nmod vmod punct sub nmod nmod root sub punct vmod punct adv amod dob punct coord adv conj punct punct
+sub adv root det sub nmod tmp pob adv vmod dob nmod tmp pob nmod det punct
+sub tmp adv root vmod dob nmod nmod nmod vmod pob loc pob tmp pob det punct coord coord det conj nmod nmod nmod pob nmod dob nmod vmod pob loc pob coord conj nmod nmod pob loc pob punct
+sub sub nmod sub nmod vmod amod pob tmp pob det punct dep nmod sub root vmod tmp pob nmod vmod adv punct
+sub nmod nmod coord nmod nmod pob adv root adv prp vmod vmod pob nmod punct
+sub coord conj root dob punct
+sub det root vmod dob tmp pob nmod coord tmp pob conj vmod vmod dob nmod vmod punct
+tmp pob det punct sub det root vmod vmod vmod dob nmod vmod nmod nmod punct nmod punct punct sub adv nmod dob nmod nmod tmp nmod dob nmod vmod punct
+dep det tmp nmod punct sub adv root punct
+punct amod root tmp adv nmod sub nmod adv vmod adv punct
+punct sub root dob loc pob nmod punct coord sub nmod conj vmod coord sub dep conj punct
+punct sub adv root tmp nmod adv vmod dob punct
+punct root nmod nmod sub nmod nmod punct sub adv vmod dob coord sub nmod pob adv adv conj vmod punct
+punct sub root vmod nmod vmod nmod pob punct punct
+root vmod
+sub nmod pob nmod nmod nmod pob loc pob nmod nmod nmod pob coord conj root vmod nmod det dob nmod det nmod nmod prp pob nmod tmp pob det pmod pob punct vmod amod amod amod punct
+sub nmod root amod tmp pob nmod vmod punct dep punct vmod dep vmod punct sub det adv vmod tmp pob punct
+sub nmod root dob iob pob nmod nmod vmod vmod punct nmod coord sub nmod dob coord conj nmod conj punct
+sub nmod pob nmod root vmod dob nmod nmod nmod pob nmod nmod nmod det tmp vmod det pob nmod nmod punct nmod vmod vmod nmod iob pob punct
+nmod sub nmod nmod punct nmod nmod root sub nmod pob amod punct vmod punct punct
+punct sub root dob nmod dob nmod coord nmod dob iob pob nmod amod punct punct sub dep punct
+sub nmod root vmod nmod vmod dob nmod coord sub conj vmod pob nmod pob punct
+punct root vmod prp vmod det sub amod vmod punct punct sub dep punct
+punct sub adv root det dob nmod vmod pob vmod punct punct
+root nmod
+sub nmod amod root amod nmod nmod vmod punct
+sub nmod dob nmod root sub nmod nmod vmod vmod dob vmod punct nmod nmod nmod vmod coord conj nmod nmod vmod adv vmod vmod dob punct nmod punct nmod pob nmod pob tmp coord conj pob punct
+amod root vmod nmod sub adv vmod prp det pob amod nmod vmod punct
+root vmod det vmod nmod dep prp pob loc pob coord conj tmp det pob nmod nmod pob punct
+tmp pob punct sub nmod nmod adv root amod vmod punct
+dep nmod sub nmod nmod adv root loc pob punct
+root det sub nmod loc pob vmod vmod tmp pob sub nmod punct prd amod amod nmod nmod nmod dob loc pob nmod punct
+sub sub root tmp pob det punct det nmod conj punct tmp sub nmod prp pob amod nmod punct
+sub nmod nmod adv root dob punct
+sub nmod nmod loc pob root amod amod tmp det pob nmod amod punct dep dep adv conj det sub adv vmod vmod loc pob punct
+dep sub root sub adv vmod vmod dob sub adv nmod adv dob nmod punct
+sub nmod nmod det dob nmod root vmod tmp pob det coord adv adv conj vmod pob nmod punct
+sub nmod punct sub nmod vmod root tmp det 
+sub nmod vmod amod pob nmod nmod nmod det dob loc pob tmp root vmod vmod nmod det tmp punct nmod det punct
+sub nmod punct root det sub nmod nmod pob vmod punct tmp pob det sub nmod vmod dob nmod nmod pob
+tmp dep pob punct det sub nmod dob nmod punct nmod amod mnr punct nmod coord conj dob coord conj punct adv root vmod vmod nmod det tmp punct
+sub nmod root vmod pob nmod pob nmod nmod punct
+det sub nmod root sub vmod punct vmod vmod prp vmod det dob adv vmod adv nmod vmod tmp pob nmod nmod tmp sub adv nmod sub nmod loc pob vmod punct
+sub root vmod sub nmod dob vmod punct dob nmod vmod nmod nmod conj vmod punct tmp pob det nmod det pob nmod vmod punct sub dep punct
+sub vmod root dob x dep tmp pob sub nmod det dob nmod coord conj det pob nmod nmod pob punct
+root nmod pob nmod nmod amod det pob punct
+sub root tmp pob sub nmod vmod pob nmod punct pob nmod det punct nmod pob loc det pob nmod pob punct
+root loc pob nmod tmp pob punct sub nmod nmod vmod sub vmod punct vmod dob nmod nmod punct coord punct conj dob iob dob adv nmod dir pob punct punct
+sub punct nmod nmod nmod root sub vmod punct vmod punct coord punct nmod sub conj vmod dep sub nmod adv vmod vmod punct punct
+sub adv root dep det sub nmod coord conj adv vmod vmod loc loc det pob nmod dob nmod adv vmod vmod vmod vmod det tmp punct
+adv root det dob nmod det pob nmod nmod loc dep amod punct nmod vmod punct nmod coord conj punct
+pmod pob det punct sub root vmod tmp pob det adv vmod dob nmod pob nmod vmod loc pob vmod adv punct det tmp nmod pob sub nmod vmod vmod pob nmod vmod prp pob nmod vmod nmod nmod punct
+sub nmod punct nmod punct root dob nmod nmod pob nmod vmod punct nmod tmp tmp pob det punct
+punct sub adv root dob nmod pob adv nmod adv punct sub adv adv dep punct punct sub dep punct
+sub nmod adv root vmod adv
+det nmod det tmp nmod punct sub nmod pob root vmod dep sub adv vmod amod vmod tmp pob punct
+sub nmod vmod root dob nmod pob det vmod nmod nmod punct coord det sub nmod coord conj dep vmod punct coord vmod pob sub x adv nmod adv dob punct
+tmp punct root dob nmod nmod pob nmod nmod vmod adv punct
+sub adv root dob det vmod det pob nmod vmod nmod vmod vmod pob nmod adv loc pob punct
+sub root det dob nmod vmod loc pob prp vmod dob loc pob coord tmp adv conj vmod dob vmod nmod punct
+sub nmod vmod root dob adv nmod adv vmod pob nmod adv nmod pob dep tmp adv nmod adv loc pob punct
+loc pob nmod det punct sub root dob nmod pob nmod punct sub dep dob nmod det dob nmod adv loc pob nmod punct
+det sub nmod nmod vmod tmp pob det root vmod det sub nmod nmod amod pob loc pob adv vmod vmod dob nmod pob loc pob nmod coord conj vmod tmp pob sub nmod tmp pob det punct
+sub nmod adv root vmod dep vmod pmod pob det punct coord adv conj dob adv nmod vmod punct
+sub nmod pob nmod coord nmod vmod adv root vmod det dob vmod vmod coord vmod vmod vmod pob nmod nmod punct sub adv dep vmod coord conj vmod vmod punct
+sub nmod pob nmod punct dep tmp nmod det punct det det sub nmod vmod adv dep adv dob tmp pob det pob punct adv adv root vmod punct coord sub det punct det punct sub dep dob tmp amod tmp pob nmod vmod pob punct
+tpc pob nmod dob nmod nmod loc pob punct sub root dob tmp det pob punct
+dep sub root dep det sub adv adv vmod adv vmod punct vmod vmod dob nmod det dob nmod punct prp sub dep vmod dep sub vmod vmod dob iob pob coord sub amod conj dob punct
+det sub adv adv root vmod nmod tmp nmod
+sub nmod det tmp nmod pob nmod det pob nmod vmod vmod nmod dob adv root dob nmod punct nmod sub nmod dep det dob nmod amod nmod amod punct
+dep sub nmod prd dep amod amod root vmod tmp pob det sub adv nmod punct sub dep vmod dep nmod nmod dob nmod nmod amod punct
+det sub nmod nmod root vmod tmp vmod vmod amod nmod vmod dob nmod punct nmod coord conj punct tmp det nmod det pob punct dep dep pmod det pob nmod coord conj punct
+tpc dep sub root det dob adv adv nmod vmod tmp nmod pob punct nmod nmod pob nmod punct
+dep det sub adv root dob coord det punct dob nmod punct nmod vmod nmod pob punct
+dep punct sub nmod vmod det dob root sub vmod nmod dob nmod nmod sub nmod tmp punct coord punct dep dep pmod pob nmod nmod tmp det pob punct sub nmod adv dob adv dep punct
+sub nmod vmod nmod pob nmod adv root dob coord nmod det sub nmod nmod vmod vmod adv conj vmod vmod punct tmp pob pmod pob punct sub nmod vmod dep dob nmod nmod vmod vmod vmod prp nmod sub dep dob adv dep vmod vmod punct
+dep sub adv root vmod pob nmod det dob nmod punct
+sub adv root det dob nmod nmod coord conj pob tmp pob nmod det prp vmod dep nmod sub vmod dob vmod vmod punct sub dep coord conj vmod vmod pob punct
+nmod nmod punct sub nmod root vmod coord vmod vmod punct coord det sub adv nmod vmod adv conj det dob adv nmod dob nmod punct
+det sub nmod dep det pob nmod nmod pob vmod vmod coord conj dob adv root vmod vmod vmod det tmp punct
+dep det sub nmod loc loc det pob nmod adv adv root vmod vmod det tmp punct det sub nmod vmod iob det pob nmod det pob nmod punct
+sub adv adv root dob prp dob nmod det tmp nmod iob pob nmod loc punct coord sub nmod nmod coord vmod conj adv conj vmod vmod det tmp punct
+sub nmod root vmod pob nmod dep sub adv vmod vmod dob prp vmod dob nmod nmod nmod punct coord adv adv conj dob adv nmod adv punct
+tmp pob nmod det punct sub adv root vmod adv dob nmod vmod punct coord sub nmod loc loc pob nmod nmod nmod det tmp pob adv conj vmod vmod tmp det pob punct
+det sub nmod nmod nmod nmod root vmod pob dep sub adv vmod vmod dob punct tmp pob nmod punct coord sub nmod adv conj conj vmod punct
+det sub nmod vmod vmod nmod coord conj nmod adv root vmod dob nmod loc pob nmod tmp pob det coord det sub nmod conj vmod punct nmod sub nmod nmod adv vmod vmod coord tmp dep conj punct punct
+sub nmod root vmod pob dep punct sub nmod nmod punct nmod pob nmod dob nmod loc vmod sub punct adv vmod det tmp nmod pob coord adv conj nmod dob nmod coord sub det adv adv conj tmp pob punct punct
+det sub nmod pob nmod root dob punct
+vmod root x vmod loc pob coord adv conj vmod punct
+nmod sub nmod vmod amod pob nmod coord conj dob root vmod vmod dob nmod det tmp punct coord det sub nmod dob conj vmod vmod vmod punct
+det sub root punct vmod vmod vmod punct vmod vmod punct vmod coord conj dob coord conj nmod punct
+sub root vmod vmod vmod dep sub adv dep amod vmod tmp pob nmod punct
+det sub nmod nmod pob nmod root vmod det tmp coord adv conj adv loc nmod punct
+dep sub cnd vmod punct sub adv root vmod vmod det pob nmod vmod punct sub adv nmod sub vmod dob sub adv adv nmod dob adv punct
+nmod sub dep sub nmod coord conj dob adv root vmod vmod det tmp tmp pob nmod punct
+sub nmod nmod pob root vmod dob nmod pob nmod pob nmod dob nmod nmod nmod pob
+sub root vmod sub adv vmod vmod pob nmod nmod det pob coord nmod tmp sub det det tmp nmod nmod vmod pob nmod nmod vmod vmod pob punct
+sub root dob vmod dob nmod vmod nmod nmod vmod vmod det pob nmod nmod punct loc sub nmod loc det pob nmod dob nmod punct det nmod nmod coord conj nmod nmod det dob nmod vmod punct
+sub det adv root det dob nmod nmod det pob nmod vmod coord conj nmod punct vmod dob nmod loc det pob punct
+root dep tmp pob nmod adv dob nmod coord conj punct nmod sub nmod amod vmod amod pob nmod nmod pob dep tmp pob punct
+root vmod pob punct nmod sub adv vmod vmod dob nmod dob coord conj vmod dob tmp punct
+nmod sub nmod root vmod tmp pob nmod nmod
+nmod sub root vmod nmod prp pob punct vmod vmod det dob nmod nmod punct
+sub nmod pob nmod pob root vmod dob nmod nmod nmod vmod dob coord conj prp det sub dep vmod vmod vmod pob punct
+punct sub nmod dob tmp det pob nmod nmod root vmod amod tmp nmod pob punct punct sub dep vmod punct
+sub nmod dob coord conj amod root det dob nmod punct vmod det vmod vmod vmod pob nmod nmod punct
+sub punct root vmod vmod pob punct nmod coord conj punct det pob nmod amod amod pob punct adv dep vmod pob nmod punct vmod vmod punct vmod adv vmod det dob dob nmod vmod dob nmod vmod vmod dep amod tmp punct
+sub nmod root adv vmod det pob nmod det nmod tmp det pob nmod nmod punct vmod adv dob nmod nmod nmod nmod nmod pob nmod punct
+sub root dep sub nmod nmod tmp det pob nmod nmod adv adv vmod vmod pob punct
+sub nmod nmod nmod det root adv loc det pob nmod nmod punct nmod vmod punct nmod punct nmod punct nmod coord conj nmod punct
+root det dob nmod nmod vmod vmod
+sub root det sub nmod adv vmod tmp pob nmod pmod pob nmod det punct mnr pob nmod nmod nmod vmod coord conj dob punct
+sub root vmod adv vmod loc pob nmod punct nmod coord conj tmp pob sub nmod punct
+tmp dep pob punct sub nmod nmod adv root adv det punct sub pmod pob nmod dep vmod loc pob punct
+det sub nmod adv root vmod loc det pob punct
+tpc pob det nmod adv nmod loc det pob nmod punct det sub root vmod amod pob det det ext punct det dep det prd coord det conj det prd punct
+root det sub loc pob vmod vmod vmod vmod det pob coord conj nmod loc det pob nmod dob adv nmod vmod punct sub pmod pob nmod adv dep loc punct dep loc det pob nmod coord sub conj dob punct
+sub root adv vmod dob nmod tmp pob nmod det
+sub nmod nmod loc pob root vmod pob det tmp pob det prp adv vmod dob nmod nmod vmod vmod tmp det pob nmod punct vmod pob nmod nmod nmod vmod coord conj dob punct
+sub det adv root adv tmp nmod det adv nmod dob nmod nmod nmod nmod nmod det tmp pob punct
+root det sub vmod vmod tmp dep sub nmod nmod conj vmod loc pob det punct
+tpc pob det nmod adv nmod punct det sub root vmod amod pob det tmp punct det dep det prd coord det conj det prd punct
+root det sub nmod vmod vmod vmod det pob nmod vmod coord nmod loc pob nmod dob tmp adv nmod punct vmod det dob loc pob punct nmod loc det pob nmod nmod nmod coord dep conj pob coord det conj nmod punct
+det sub nmod root vmod vmod vmod vmod vmod nmod det tmp prp vmod dob
+nmod sub nmod root det dob nmod nmod pob nmod nmod nmod vmod coord conj vmod loc pob nmod punct nmod tmp pob det punct det punct
+sub nmod adv adv root dob nmod loc pob coord conj adv vmod adv tmp pob nmod loc det pob nmod sub vmod vmod vmod punct
+loc pob punct sub adv root vmod vmod pob nmod nmod coord sub adv conj vmod coord det sub nmod adv conj vmod vmod punct sub dep punct
+pmod pob det punct sub det nmod coord det conj root vmod vmod dob nmod nmod nmod pob punct vmod vmod vmod vmod coord conj det dob nmod coord conj vmod prp vmod dob nmod pob nmod nmod pob tmp pob nmod vmod dob punct sub nmod dep punct
+adv punct nmod sub root vmod vmod det dob nmod vmod dob punct vmod punct coord conj dob nmod det tmp vmod det pob nmod tmp tmp pob nmod punct
+sub nmod nmod root dob nmod vmod dob nmod dob iob pob nmod tmp pob det sub nmod nmod vmod det sub nmod nmod nmod vmod vmod dob vmod pob nmod punct
+sub coord det conj nmod root dob vmod det sub punct nmod nmod punct nmod nmod iob vmod det dob nmod vmod dob punct
+sub root vmod vmod vmod det pob nmod prp vmod coord conj det dob nmod vmod dob loc pob punct nmod punct det nmod nmod nmod punct nmod punct coord conj nmod punct
+sub adv root adv det tmp nmod adv nmod dob nmod nmod loc pob punct mnr pob nmod nmod nmod vmod coord conj dob dep vmod prp nmod pob nmod punct
+tmp tmp pob pob nmod det punct nmod sub adv root det dob nmod punct nmod det dob nmod coord det conj nmod punct
+sub nmod root vmod pob det nmod nmod adv nmod dir pob
+det sub root vmod dob loc pob nmod loc pob nmod tmp pob det
+det sub nmod coord det conj nmod nmod root loc pob punct sub det adv adv dep vmod tmp nmod punct vmod det vmod nmod nmod amod nmod pob punct vmod dob nmod adv adv nmod nmod nmod pob vmod pob punct
+punct sub det punct root det dob nmod det nmod punct sub nmod tmp det loc pob nmod loc pob nmod loc pob loc pob nmod det nmod pob punct sub nmod dep vmod tmp pob nmod det punct
+sub nmod adv root vmod loc pob loc pob punct
+tmp pob punct sub root vmod coord det sub nmod adv conj dob nmod pob prp vmod dob tmp det punct
+tmp pob punct det sub nmod nmod loc dep pob nmod adv root vmod vmod amod pob coord sub adv conj vmod loc pob nmod coord conj coord conj nmod loc pob nmod nmod punct
+punct sub det punct root det dob det nmod nmod pob nmod loc pob nmod nmod punct
+tmp pob punct sub nmod vmod nmod adv root dob nmod pob det coord conj dob loc pob nmod punct
+sub adv root det sub nmod adv vmod tmp pob det punct
+sub det adv root det dob nmod nmod coord det conj nmod punct
+sub adv root adv det tmp adv nmod dob nmod nmod loc pob punct
+loc pob nmod punct nmod det det sub adv root vmod punct coord sub nmod nmod conj vmod dep det dob punct
+sub nmod nmod pob nmod adv root adv tmp pob nmod nmod punct sub nmod nmod
+root vmod sub nmod nmod pob nmod pob nmod adv nmod adv tmp nmod nmod punct sub sub nmod nmod dep punct
+sub adv root adv dob det tmp pob nmod nmod pob tmp nmod det pob nmod nmod loc pob pob punct
+prp adv vmod dob coord conj nmod vmod vmod prp vmod coord conj dob punct dep punct sub root det dob nmod nmod pob nmod dob punct
+sub nmod adv adv root dob nmod nmod nmod loc pob tmp det pob nmod punct dep punct det sub adv adv dep vmod dob amod nmod prp det sub nmod nmod vmod dep adv nmod tmp punct sub nmod dep punct
+adv pob punct sub root sub nmod vmod vmod adv det det dob nmod nmod adv nmod pob dep sub loc pob punct nmod nmod dob punct
+tmp amod punct sub nmod nmod nmod vmod coord conj dob root vmod tmp pob punct sub det vmod vmod det dob nmod nmod det dob nmod coord det conj nmod pob adv nmod vmod loc pob nmod nmod coord conj punct nmod punct
+sub nmod nmod adv root dob det nmod pob nmod det dob nmod loc det pob coord conj nmod vmod dob vmod det pob nmod punct
+sub det nmod nmod nmod prp sub dep adv root vmod tmp pob det
+sub sub nmod nmod root sub det nmod det nmod nmod nmod prp sub dep adv vmod vmod dob nmod tmp pob det punct
+sub nmod nmod root adv dob loc pob nmod pob nmod vmod punct nmod vmod vmod vmod pob nmod punct nmod punct det nmod nmod nmod punct nmod nmod nmod coord conj nmod loc pob punct
+sub nmod det root dob pmod det pob loc pob nmod dob nmod dob punct
+sub nmod root mnr vmod vmod pob nmod nmod punct tmp pob det punct det sub nmod nmod adv vmod vmod loc pob punct vmod det dob adv nmod vmod vmod coord det conj nmod vmod vmod punct
+sub nmod root vmod sub nmod nmod conj adv vmod coord conj dob nmod vmod dob nmod vmod tmp pob nmod vmod pob nmod vmod vmod vmod punct
+adv nmod nmod nmod dob nmod dob mnr vmod vmod vmod det pob nmod punct sub adv root vmod dob iob pob nmod punct sub nmod dep punct
+sub nmod nmod nmod root dep sub nmod nmod det pob nmod coord conj adv vmod vmod dob det nmod adv coord conj dob nmod nmod det vmod dob nmod nmod det det pob loc pob punct
+sub root dob nmod iob pob prp vmod vmod pob
+sub nmod punct nmod pob nmod nmod nmod punct nmod punct punct tmp adv root det dob nmod nmod amod iob pob prp vmod dob nmod vmod pob adv nmod adv punct
+sub nmod det root dob nmod nmod nmod nmod det dob nmod det vmod pob nmod punct vmod vmod vmod vmod pob nmod pob punct
+sub nmod punct adv vmod loc pob punct root dob nmod nmod coord conj punct
+punct sub amod root amod pob coord det conj nmod prp vmod pob nmod pob punct punct sub nmod dep punct punct coord sub nmod det adv conj det dob nmod loc pob coord conj punct
+adv pob nmod punct sub sub nmod nmod root dep sub nmod vmod dob nmod nmod nmod pob nmod coord conj dob punct
+adv nmod nmod nmod punct sub nmod punct mnr dob punct adv root vmod det det dob nmod iob pob prp vmod vmod pob punct vmod vmod vmod vmod punct vmod det dob nmod punct vmod dob nmod punct vmod vmod dob punct coord coord conj dob nmod vmod mnr pob nmod dob nmod pob vmod pob nmod punct
+det sub punct nmod root loc vmod vmod dob
+sub nmod nmod nmod nmod vmod coord conj dob tmp adv root loc det pob nmod dep det sub coord conj nmod loc vmod vmod vmod dob vmod det dob nmod loc pob coord conj punct
+sub nmod adv root dob nmod pob nmod punct nmod det dob nmod nmod coord conj nmod det pob nmod pmod pob nmod vmod punct
+sub nmod root dep sub nmod loc pob punct pob coord det conj nmod amod vmod vmod prp vmod dob nmod tmp sub nmod det dob coord conj prp pob nmod nmod nmod pob punct
+det sub nmod dir pob nmod det loc det pob nmod dob nmod vmod root vmod vmod vmod dob nmod nmod punct
+det sub nmod pob nmod root sub nmod vmod dob loc pob prp sub adv dep adv det dob nmod nmod punct
+sub nmod punct nmod nmod coord conj coord det conj nmod vmod root dob nmod det dob nmod nmod vmod vmod det pob nmod punct
+sub nmod root nmod sub adv vmod det dob nmod nmod tmp punct det det sub adv dep coord sub adv conj vmod loc det pob loc pob nmod nmod nmod nmod punct
+pmod pob nmod punct sub nmod nmod nmod nmod nmod root tmp dep sub vmod vmod vmod det det dob nmod prp vmod dob nmod dob punct
+sub root dob nmod mnr vmod vmod
+sub nmod vmod pob nmod adv nmod adv nmod vmod coord conj tmp adv root vmod vmod pob nmod coord conj tmp pob punct
+adv amod det nmod punct sub sub nmod nmod coord nmod nmod adv root dob punct
+sub root det det vmod punct det det nmod nmod punct punct vmod det det dob nmod pob nmod coord conj det det conj nmod det pob nmod vmod vmod pob nmod punct
+sub nmod det root vmod dob nmod dob nmod loc det pob nmod pob nmod nmod punct nmod nmod nmod punct nmod nmod nmod punct nmod nmod nmod coord conj nmod coord nmod vmod nmod punct vmod pob vmod vmod vmod dob nmod vmod coord conj dob punct
+root vmod dob nmod punct nmod sub nmod nmod vmod vmod det sub adv vmod vmod vmod pob tmp punct vmod det sub vmod dob nmod nmod mnr amod amod prp adv vmod vmod vmod dob nmod coord conj vmod punct
+pmod pob nmod punct sub nmod root sub nmod vmod vmod dob nmod pob nmod nmod nmod pob nmod vmod dob nmod nmod loc pob vmod sub det adv adv conj loc pob punct
+sub adv root tmp sub nmod vmod pob nmod dob tmp pob nmod punct sub nmod adv vmod nmod det det dob punct coord conj vmod sub nmod adv vmod dob nmod det punct
+root vmod det pob nmod nmod pob vmod dob nmod pob nmod nmod prp vmod dob nmod iob det pob nmod punct nmod dob punct vmod mnr amod prp vmod vmod dob nmod dob nmod pob punct sub nmod dep adv punct
+sub adv root dob nmod dob nmod loc pob tmp det pob nmod
+sub nmod nmod nmod nmod loc loc pob nmod adv root dob nmod dob nmod coord conj dob dir pob nmod coord nmod nmod punct nmod punct prp vmod adv coord conj vmod vmod punct
+det sub det nmod nmod loc pob nmod nmod vmod prp pob nmod nmod nmod dob tmp adv root vmod pob nmod nmod nmod loc pob nmod nmod loc pob nmod vmod vmod vmod punct vmod vmod coord conj dob nmod punct
+sub nmod nmod nmod root dob nmod det dob nmod dob vmod dob nmod mnr pob nmod punct
+sub nmod root prp det pob nmod punct nmod nmod dob coord conj nmod nmod det punct nmod punct punct nmod nmod coord conj dob coord conj nmod punct nmod punct punct nmod nmod coord conj nmod nmod punct nmod punct coord conj nmod nmod punct vmod vmod det dob nmod nmod punct
+sub nmod coord conj nmod pob root dep sub adv vmod vmod vmod det dob nmod nmod nmod nmod nmod punct nmod punct nmod vmod pob nmod pob nmod adv nmod punct
+root vmod det pob nmod x vmod vmod det pob nmod nmod nmod nmod nmod punct sub vmod sub adv vmod coord conj adv conj dob nmod coord conj nmod nmod dob nmod pob nmod det punct
+adv pob punct sub adv root det det dob punct det nmod nmod punct nmod det det dob prp vmod vmod coord conj nmod adv prp vmod dob nmod coord conj punct
+nmod sub nmod nmod nmod nmod coord conj nmod pob nmod nmod root dep sub adv vmod prp dob nmod nmod nmod vmod dob nmod nmod tmp amod amod punct
+sub root sub adv vmod dob tmp pob det nmod det prp vmod loc pob punct
+sub root sub nmod vmod det dob nmod prp dob
+sub nmod nmod nmod root sub nmod loc pob nmod vmod det dob nmod vmod dob tmp sub coord det conj nmod vmod loc tmp pob prp vmod dob nmod vmod punct
+pmod det pob nmod nmod det pob punct sub nmod root sub vmod vmod det dob nmod nmod pob nmod adv vmod vmod vmod pob nmod punct vmod dob coord adv conj vmod dob nmod punct
+sub nmod adv root sub nmod dob vmod vmod pob vmod pob nmod nmod punct vmod sub nmod vmod det dob nmod vmod prp vmod dob nmod pob coord conj punct vmod vmod dob coord adv conj vmod dob nmod punct
+dep punct sub nmod coord conj nmod root vmod vmod dob punct nmod nmod nmod vmod prp vmod vmod vmod punct prp vmod mnr amod det dob nmod nmod nmod punct nmod punct nmod nmod pob nmod pob punct
+dep punct sub nmod root vmod vmod vmod dob coord conj dob loc nmod nmod vmod vmod dob punct vmod dob nmod coord conj dob nmod dob punct
+sub nmod adv adv root punct vmod punct amod amod punct amod pob nmod vmod det dob nmod nmod punct sub dep punct
+det sub nmod dob nmod loc pob coord conj amod root punct
+sub nmod root vmod dob nmod adv punct
+sub adv root vmod dob det ext adv punct
+punct sub root vmod punct punct sub dep vmod pob nmod nmod nmod pob punct
+sub nmod vmod root tmp sub nmod nmod vmod nmod vmod loc pob punct
+sub det root sub vmod det vmod nmod punct
+sub punct sub root det sub nmod nmod det vmod dob nmod vmod punct
+sub nmod nmod dob nmod root vmod pob nmod loc pob
+sub root prp vmod adv vmod dob nmod nmod pob punct
+sub nmod nmod det pob nmod nmod pob vmod root vmod prp pob x punct
+sub nmod punct nmod det nmod nmod pob root vmod tmp det 
+root dob nmod pob nmod vmod dob punct
+sub nmod root det dob nmod pob nmod pob punct
+sub nmod root dob coord det conj nmod nmod prp pob nmod punct
+det sub nmod nmod nmod loc pob coord conj adv root adv
+punct sub punct dep sub root dob nmod det nmod nmod coord conj punct sub nmod dep dep det sub adv vmod punct vmod punct amod amod punct coord sub det adv conj vmod dob punct
+sub vmod root nmod det dob nmod det tmp punct vmod dep vmod tmp pob nmod tmp nmod det punct coord det sub conj sub adv vmod loc pob nmod vmod nmod vmod punct
+tpc det pob nmod coord conj prp vmod dob nmod nmod pob punct punct sub amod root amod pob nmod punct punct sub punct nmod nmod nmod nmod pob coord conj nmod dep tmp pob nmod nmod punct det pob punct tmp pob nmod punct
+punct sub root vmod dob nmod nmod amod nmod prp vmod vmod dob dep vmod det dob nmod prp vmod dob punct punct sub dep vmod pob nmod nmod nmod pob nmod punct nmod nmod tmp pob nmod punct
+punct dep punct adv root punct vmod vmod dob nmod punct vmod adv dob coord conj punct
+sub root vmod dep amod amod vmod prp vmod sub punct vmod dep vmod pob nmod adv dob det punct punct
+adv vmod adv root loc nmod loc pob dep sub nmod nmod adv dep vmod amod tmp sub det nmod loc pob dep det sub nmod nmod dep adv vmod det tmp nmod amod amod nmod nmod punct
+sub coord conj root vmod dep dob vmod pob nmod nmod vmod vmod tmp pob nmod punct mnr pob nmod pob nmod punct
+det sub root dob nmod nmod nmod dep pmod pob punct
+sub nmod nmod adv root loc det pob nmod adv punct
+punct sub adv root det dob nmod coord det sub conj vmod punct punct sub nmod punct nmod nmod nmod dep punct
+punct sub nmod det root dob nmod amod punct
+tmp pob det punct det sub root dob nmod amod tmp det pob punct
+tmp det sub nmod nmod punct root nmod nmod prd punct
+sub nmod nmod amod adv root dob nmod nmod nmod nmod prp pob nmod nmod tmp punct sub nmod nmod nmod punct nmod nmod dep punct
+dep amod det sub nmod prp pob nmod det tmp loc pob amod prd amod amod det nmod det tmp tmp pob det nmod det punct det sub nmod pob nmod root nmod det sub nmod adv vmod det tmp tmp pob nmod det punct
+punct tmp sub nmod dob nmod det tmp pob nmod punct tmp pob det nmod det punct sub adv adv root loc punct
+det sub nmod root dob nmod
+sub nmod adv root vmod dob iob pob nmod punct det sub dep punct mnr pob nmod vmod det dob nmod vmod det pob tmp nmod pob punct nmod loc nmod amod punct vmod dob punct vmod vmod loc coord conj dob punct
+punct sub root dob nmod prp det sub dep adv coord vmod conj punct punct sub adv vmod vmod prp vmod vmod dep sub vmod det dob nmod nmod nmod x amod nmod amod pob tmp sub nmod adv nmod adv coord det sub adv conj loc pob punct coord det sub det adv conj adv punct mnr pob nmod punct
+sub det adv root det dob nmod vmod det dob nmod punct nmod vmod vmod dob coord conj det dob nmod punct vmod pob nmod vmod punct
+sub nmod root det dob nmod pob nmod nmod pob punct nmod vmod sub vmod nmod det dob coord conj nmod iob pob nmod punct
+loc pob punct sub nmod root tmp det punct sub adv vmod det sub vmod dob nmod vmod dob punct coord loc pob punct sub tmp det adv conj vmod vmod nmod dob nmod coord conj adv dob nmod tmp det pob vmod pob nmod dob punct
+punct det sub nmod adv dep root vmod dob nmod nmod pob prp vmod vmod dob mnr pob nmod loc punct vmod vmod vmod pob nmod punct coord conj dob punct punct sub dep dob punct
+nmod sub nmod adv root dob nmod nmod nmod nmod punct
+sub nmod nmod vmod nmod tmp adv root vmod dob loc pob tmp pob det punct
+dep tmp sub nmod det nmod punct nmod prd sub root adv punct
+loc det pob nmod vmod vmod vmod pob punct root nmod tmp tmp pob pob pmod pob pob adv vmod vmod nmod det tmp punct
+det sub loc pob nmod root vmod dob nmod tmp amod amod punct
+sub nmod root punct punct sub nmod nmod adv vmod vmod tmp pob nmod punct coord tmp sub adv conj dob nmod det punct
+det sub nmod adv root adv loc pob nmod punct vmod vmod amod amod adv nmod tmp pob nmod punct
+loc pob punct nmod det sub root vmod tmp pob det punct
+sub adv root dob nmod tmp pob pmod pob pob nmod det punct
+sub nmod nmod coord conj adv root vmod vmod pob
+sub root vmod nmod loc pob det nmod nmod nmod nmod loc pob tmp pob tmp pob det punct
+det sub nmod nmod nmod root dob nmod tmp sub nmod adv
+root loc pob prp vmod dob nmod nmod nmod nmod tmp nmod pob nmod det pob sub nmod vmod coord conj dob nmod prp vmod dob coord conj nmod amod punct
+adv root dep adv vmod adv dob nmod pob nmod punct det sub nmod nmod nmod vmod adv det dob nmod nmod det pob nmod nmod pob punct nmod vmod nmod coord det conj nmod pob punct
+det sub nmod loc pob nmod nmod punct nmod coord conj root dob nmod nmod nmod pob nmod loc det pob nmod prp sub nmod dep punct
+punct sub adv adv root dob nmod punct
+root dob tmp det
+tmp pob det sub nmod nmod nmod punct sub nmod pob vmod root prp vmod det dob nmod nmod prp vmod dob nmod nmod pob sub nmod nmod nmod dep dob det punct vmod dep det sub nmod adv adv vmod dob nmod nmod adv nmod vmod punct
+punct sub nmod loc pob nmod nmod amod amod root punct amod amod coord amod conj punct punct sub dep vmod det pob punct
+det sub nmod tmp nmod root dob nmod loc pob coord det conj nmod nmod pob punct vmod dep loc nmod pob nmod nmod punct sub dep det dob nmod nmod vmod vmod amod punct
+sub adv root vmod det pob nmod nmod punct nmod sub nmod vmod vmod prp pob punct
+root vmod pob punct sub nmod nmod nmod amod vmod amod prp sub det adv dep vmod coord vmod dob nmod prp pob nmod vmod punct
+punct tpc nmod dep sub adv nmod tmp pob det dep sub adv root tmp pob det punct punct sub dep punct
+loc pob nmod nmod punct sub nmod root adv dob det punct vmod dep vmod det punct dob nmod amod adv adv nmod punct punct vmod vmod vmod pob nmod vmod tmp det nmod det pob nmod vmod
+sub root vmod sub adv punct vmod amod vmod vmod pob nmod punct punct
+punct root dob nmod loc pob coord punct sub vmod dep sub adv vmod loc pob nmod punct punct sub dep punct
+sub nmod pob root dep sub nmod dob adv vmod vmod amod
+root nmod nmod nmod nmod pob nmod pob nmod punct sub dep punct
+sub root sub nmod amod amod prd punct amod amod punct amod amod punct
+det sub nmod adv root vmod loc amod nmod nmod prp vmod dob nmod nmod adv vmod vmod dob nmod iob det pob coord conj punct sub nmod nmod nmod dep punct
+sub amod nmod nmod pob nmod pob nmod root vmod vmod vmod prp sub det dep det dob loc pob det nmod punct sub dep punct
+punct sub nmod amod amod root punct amod amod coord amod conj punct punct sub dep loc det pob nmod nmod pob nmod nmod det pob nmod loc pob punct nmod coord conj punct
+det sub root det sub nmod nmod x vmod vmod amod vmod pob nmod punct
+nmod nmod det tmp nmod pob nmod nmod nmod nmod pob punct sub nmod pob nmod nmod root vmod amod amod tmp pob det sub nmod dob nmod coord det conj nmod prp vmod dob nmod nmod pob
+tmp pob det sub nmod dob prp vmod dob nmod pob nmod dob nmod dob nmod nmod det det det dob punct det det det nmod nmod punct punct tmp nmod det sub nmod nmod nmod root vmod det sub nmod nmod adv vmod dob nmod vmod amod punct
+sub nmod nmod dob root vmod punct dob punct punct vmod nmod dob nmod nmod
+det sub nmod root dob nmod loc pob punct nmod punct
+sub nmod nmod dob det tmp adv root vmod vmod tmp pob sub nmod loc dep amod nmod punct sub dep dob coord nmod sub conj loc pob loc sub vmod nmod punct
+det sub root dep tmp sub nmod nmod vmod prp pob det nmod amod amod vmod vmod pob sub nmod tmp pob det coord conj det punct vmod adv vmod nmod dob nmod nmod punct vmod adv nmod det dob adv nmod vmod loc pob prp sub nmod nmod dep vmod punct
+punct dep sub cnd loc pob nmod det nmod punct sub nmod nmod loc nmod det pob adv root punct punct adv vmod dob nmod punct sub punct det nmod nmod pob nmod loc pob nmod loc pob punct nmod punct dep vmod punct
+tpc pob nmod pob nmod dep conj nmod dob nmod punct sub nmod nmod nmod tmp det pob adv root adv dob nmod amod tmp det pob punct coord dep sub nmod nmod tmp adv nmod conj dob tmp tmp pob det nmod det punct
+sub nmod nmod tmp det pob prp pob adv root dob det det det nmod nmod amod tmp pob det punct coord x adv conj adv tmp det pob nmod amod punct
+root vmod loc pob nmod
+punct det sub adv root sub adv vmod tmp pob nmod det punct punct sub dep punct
+sub nmod dep sub nmod tmp pob nmod adv nmod vmod dob nmod adv root tmp sub nmod loc det pob loc pob nmod punct
+sub nmod nmod nmod root vmod det sub det coord conj nmod nmod loc dep amod adv vmod vmod punct
+punct amod amod root tmp nmod det sub det adv vmod vmod adv punct punct sub dep tmp nmod loc pob nmod tmp nmod det punct
+dep tmp sub root loc det pob nmod nmod amod punct coord tmp sub adv conj det dob nmod punct nmod nmod coord det conj nmod vmod punct
+punct x punct amod root tmp nmod sub nmod adv vmod coord conj dob det nmod nmod prp pob punct punct sub punct nmod nmod nmod nmod nmod loc pob punct nmod dep punct
+root nmod nmod det tmp nmod pob nmod vmod nmod punct nmod
+sub nmod nmod det tmp root vmod vmod nmod nmod vmod dob nmod nmod pob loc pob punct
+dep dep punct det sub loc det pob loc pob root vmod sub nmod pob adv vmod vmod vmod coord conj vmod dob loc pob nmod vmod nmod ext nmod coord dep loc det pob nmod punct
+sub punct nmod nmod nmod coord conj nmod pob nmod loc pob nmod punct root vmod punct punct sub adv vmod loc dob nmod nmod nmod punct punct
+root dob nmod
+sub root det sub nmod vmod det sub amod prd amod amod amod coord conj nmod dob prp vmod dob adv punct
+root vmod adv vmod vmod det dob nmod tmp amod punct
+root nmod prp pob loc pob tmp
+adv pob punct det nmod nmod nmod pob nmod nmod punct adv det pob tmp nmod nmod det punct tmp det sub nmod nmod adv root nmod det det dob nmod loc pob det tmp punct
+dep sub adv root adv nmod nmod det dob dep tmp det adv x adv nmod vmod punct
+punct sub adv adv root punct punct sub dep punct punct coord sub nmod adv conj vmod pob nmod vmod pob punct
+root nmod nmod punct sub nmod loc pob dep vmod vmod vmod nmod punct
+sub nmod punct nmod loc pob nmod nmod pob punct adv root sub nmod vmod prp vmod vmod vmod coord conj punct
+sub nmod nmod nmod pob root det vmod nmod nmod pob nmod nmod dob nmod punct
+tmp pob nmod det punct sub root sub adv vmod dob det prp vmod dob coord conj nmod nmod pob loc pob punct coord conj vmod det dob nmod pob nmod nmod dep pmod dep iob punct
+sub nmod root vmod pob dep dep det sub cnd punct sub nmod nmod adv vmod tmp pob nmod nmod punct
+root nmod dob nmod
+punct det sub root det dob punct nmod coord conj punct punct sub dep punct
+sub nmod punct adv nmod vmod vmod dob nmod punct root dob nmod nmod punct vmod dob nmod nmod nmod coord conj nmod vmod nmod punct
+tmp pob nmod vmod vmod det pob nmod nmod nmod loc pob nmod punct sub root adv det sub punct nmod coord conj punct adv vmod vmod dob nmod det pob nmod nmod punct
+sub root vmod punct punct sub adv vmod dob nmod nmod iob pob punct
+sub nmod amod root nmod det amod punct det nmod punct punct sub nmod adv dep dob det nmod punct
+root loc pob nmod nmod
+sub punct nmod nmod nmod amod loc pob nmod punct tmp tmp adv root vmod det pob nmod vmod nmod pob nmod punct
+sub adv adv root vmod prp vmod dob nmod nmod coord sub nmod nmod conj dob vmod vmod dob x punct
+root prp vmod dob
+adv adv adv punct sub nmod punct nmod nmod amod nmod amod punct amod amod coord adv conj loc pob nmod coord conj nmod punct adv root vmod dob nmod vmod vmod punct sub nmod dob nmod nmod coord nmod vmod loc pob nmod loc pob dep vmod punct
+sub nmod pob root dep det sub nmod nmod loc pob vmod vmod vmod punct
+dep sub root vmod det sub nmod nmod vmod dob adv nmod vmod prp vmod dob punct
+punct sub det sub nmod nmod adv dep dob det prp vmod dob nmod vmod adv root dob vmod dob nmod nmod pob iob det pob punct punct sub dep punct
+sub nmod vmod nmod pob root vmod dob nmod dob nmod
+tmp nmod sub nmod prp dob nmod punct det sub nmod pob adv root prp vmod sub nmod vmod vmod amod tmp nmod loc nmod punct
+root pob nmod vmod pmod pob nmod nmod pob loc pob punct nmod nmod nmod pob nmod vmod coord conj nmod dob nmod nmod punct
+det sub nmod nmod nmod amod nmod pob pmod det pob root dir loc nmod nmod punct loc det sub nmod vmod vmod adv nmod dob nmod vmod vmod punct
+tmp dep pob punct sub det nmod coord det conj nmod nmod nmod nmod dob nmod vmod loc adv adv root dob punct
+sub nmod det root dob nmod nmod det amod punct nmod prp vmod dob nmod nmod dob loc pob nmod pob loc pob punct det nmod nmod nmod nmod det punct det ext punct loc pob nmod nmod punct loc pmod det pob nmod nmod amod amod nmod loc pob
+sub det nmod det punct sub dob nmod vmod vmod det pob nmod pob nmod pmod pob punct adv root vmod vmod amod nmod amod det det pob nmod nmod punct
+sub punct adv vmod nmod det dob nmod iob det pob nmod nmod punct root vmod sub vmod amod prp vmod dob loc det pob nmod nmod pob punct nmod vmod loc pob coord conj punct prp vmod dob nmod prp vmod det det dob nmod punct
+punct sub root dob adv nmod det tmp prp vmod det dob nmod pob punct
+det sub punct nmod coord conj nmod loc pob adv root nmod det dob nmod prp vmod vmod dob dob adv nmod vmod coord conj vmod dob nmod pob nmod punct vmod sub adv vmod vmod tmp sub nmod vmod vmod punct
+sub adv root adv dob nmod nmod punct
+sub punct nmod vmod nmod pob punct nmod nmod nmod dob nmod nmod amod punct adv root dob nmod prp vmod dob nmod dob punct
+sub nmod det adv root mnr pob punct nmod punct nmod dob nmod coord conj nmod punct coord conj nmod nmod punct vmod vmod punct adv vmod dob nmod adv nmod pob nmod vmod punct
+sub root vmod sub nmod vmod vmod vmod pob nmod nmod punct prp sub dep adv dob nmod pob nmod dep conj nmod vmod dob nmod pob nmod punct
+sub adv root dob nmod det pob nmod nmod punct nmod dob nmod nmod pob punct nmod nmod nmod nmod amod amod coord det conj nmod pob punct det pob nmod nmod nmod prp sub nmod dep prp vmod vmod dob nmod dob
+sub root sub adv vmod dob nmod iob det pob nmod dob nmod tmp pob det punct det coord conj punct coord conj vmod vmod dep sub adv vmod vmod det pob nmod nmod prp vmod dob nmod det pob nmod punct
+punct tmp pob det punct amod amod root adv vmod dob nmod nmod punct
+sub adv root dob vmod pob nmod nmod det det dob nmod nmod tmp pob prp sub x dep dob nmod nmod x nmod punct
+root nmod nmod adv dob
+det sub nmod pob punct nmod coord conj punct adv adv root vmod pob nmod dob nmod pob punct
+punct sub adv root loc pob nmod nmod punct nmod coord conj coord conj punct punct sub dep vmod pob punct
+det sub nmod nmod pob nmod root vmod det dob nmod punct tmp det sub nmod nmod nmod vmod vmod
+sub nmod nmod nmod pob coord det conj nmod adv root vmod det dob nmod tmp pob nmod adv dob sub adv vmod det dob tmp pob nmod punct det dob nmod amod nmod amod punct nmod det pob nmod punct
+tmp det nmod punct det sub adv vmod dob prp vmod adv dob nmod nmod nmod adv root punct vmod dob nmod nmod pob nmod punct vmod pob x nmod vmod vmod dep sub adv vmod vmod vmod pob nmod punct
+sub nmod pob punct nmod coord conj coord det nmod nmod root vmod punct punct sub punct det nmod nmod nmod nmod loc pob punct vmod vmod vmod dob nmod nmod pob nmod pob nmod coord conj dob nmod iob pob mnr det pob nmod nmod coord det conj nmod nmod punct punct
+det sub nmod nmod root vmod vmod dob vmod vmod nmod prp vmod adv dob nmod nmod amod adv adv nmod vmod det det pob coord conj nmod det sub nmod vmod loc pob punct
+det sub root vmod sub adv adv vmod vmod dob vmod iob pob nmod pob punct tmp pob vmod dob nmod coord conj mnr det dob nmod det nmod nmod vmod coord conj prp vmod det dob nmod det pob nmod vmod punct punct
+tmp nmod det punct sub sub nmod vmod coord conj nmod punct nmod punct dep vmod dob coord conj prp vmod dob nmod nmod adv root adv dob nmod nmod det pob punct det sub nmod dep adv vmod vmod dob nmod prp vmod dob nmod nmod pob det punct
+root nmod nmod
+root vmod vmod dob punct nmod
+sub punct det pmod det pob nmod nmod dob nmod punct root vmod pob nmod nmod pob dep det sub nmod loc pob nmod pob adv vmod vmod vmod tmp pob det sub nmod vmod vmod punct
+root vmod adv vmod vmod nmod punct sub nmod pob adv vmod adv vmod vmod vmod det punct vmod vmod vmod dob nmod nmod pob nmod sub nmod vmod punct loc pob punct nmod coord conj tmp pob nmod nmod punct
+punct tmp pob nmod vmod punct nmod vmod nmod nmod nmod punct sub nmod dob nmod pob adv root vmod coord sub conj vmod vmod vmod prp sub nmod dep dob nmod punct punct sub nmod pob dep vmod pob nmod nmod nmod nmod punct
+punct sub root dob nmod nmod vmod adv coord conj dob amod nmod amod tmp pob nmod punct pmod pob nmod vmod punct vmod sub vmod dob nmod nmod det pob punct punct
+tmp pob tmp pob det punct sub nmod nmod pob root vmod sub adv vmod vmod dob nmod coord sub adv conj adv dob nmod pob punct x coord nmod vmod pob loc pob punct
+root dob nmod vmod dob nmod
+tmp sub adv nmod adv punct nmod det sub adv root vmod pob nmod nmod pob nmod prp vmod dob nmod nmod pob nmod punct
+tmp dep dep amod punct sub nmod nmod amod nmod det pob nmod root vmod vmod dob nmod punct coord conj nmod punct nmod pob nmod nmod pob nmod nmod det punct
+dep sub nmod cnd vmod pob punct sub det punct pmod pob nmod punct root dob coord det sub nmod vmod adv conj vmod nmod pob nmod punct
+tmp nmod det punct sub nmod nmod nmod pob punct nmod nmod punct nmod punct punct root vmod sub nmod tmp det pob nmod pob det vmod dob punct
+root nmod dob nmod
+tmp amod punct nmod sub root dob coord sub x conj vmod amod vmod pob nmod det nmod nmod prp pob nmod tmp det pob nmod nmod punct
+sub nmod vmod tmp det pob loc pob root vmod dob nmod nmod dob nmod nmod punct nmod pob nmod vmod coord conj nmod punct tmp pob det pob nmod prd det pob punct
+det sub nmod pob adv root vmod det dob nmod nmod nmod conj nmod nmod dob nmod punct
+sub root dob det nmod nmod pob nmod prp pob nmod
+sub root vmod nmod nmod adv dob nmod nmod nmod tmp amod amod loc pob punct
+sub nmod root vmod punct
+det det sub coord conj loc pob root det sub nmod nmod nmod nmod loc det pob vmod dob nmod det pob nmod nmod punct
+adv root dob nmod amod nmod pob nmod loc pob loc pob nmod pob punct
+sub det nmod nmod root adv tmp nmod det prp vmod dob nmod nmod vmod vmod adv vmod dob punct
+sub punct nmod nmod vmod vmod nmod nmod punct nmod punct punct root vmod pob nmod punct punct sub vmod tmp det sub nmod nmod nmod vmod amod pob adv adv vmod nmod nmod dob nmod prp vmod adv sub adv vmod vmod tmp pob punct punct pmod pob punct tmp nmod adv dob det punct dep vmod adv punct
+sub adv root vmod sub det nmod nmod det vmod vmod punct
+sub nmod nmod nmod nmod pob root dob iob pob nmod
+root vmod vmod amod vmod vmod adv nmod dob nmod amod adv punct
+dep punct sub punct nmod nmod vmod nmod nmod nmod punct nmod coord conj nmod loc pob nmod loc pob punct root dep sub det nmod amod vmod punct
+sub root vmod sub sub nmod nmod vmod dob nmod tmp vmod amod tmp nmod nmod dep sub nmod nmod adv adv dep dob nmod nmod amod punct
+sub root dob vmod vmod pob nmod pob nmod pob loc det pob nmod punct
+sub nmod root dep adv vmod vmod vmod det dob nmod coord nmod punct nmod vmod dob coord conj vmod dob nmod tmp det pob nmod punct
+punct det sub det root dob nmod pob nmod nmod pob punct punct sub dep coord conj dep sub adv adv vmod vmod coord conj det dob det punct
+root vmod vmod
+sub punct sub nmod vmod vmod nmod nmod pob nmod nmod pob nmod pob punct root dob nmod det nmod punct
+sub root punct punct nmod nmod det sub nmod det tmp amod amod vmod vmod punct amod pob nmod det nmod det det sub nmod vmod vmod punct sub dep det vmod sub adv nmod tmp punct punct
+sub root vmod dob prp vmod adv dob nmod pob nmod nmod punct nmod punct sub tmp amod nmod vmod sub adv adv vmod adv dob nmod nmod punct
+punct sub adv root punct coord tmp sub adv conj dob nmod nmod vmod pob det nmod punct punct sub dep punct
+sub nmod pob adv root punct
+det root nmod punct
+tmp pob det punct sub root vmod dob nmod adv nmod vmod punct
+dep punct sub root vmod dob det nmod det nmod punct sub nmod vmod prp vmod det dob coord conj nmod pob nmod vmod nmod pob nmod punct
+sub root sub nmod vmod vmod vmod pob nmod nmod nmod amod tmp punct
+punct root prp pob punct amod loc tmp sub 
+root vmod vmod
+sub adv root dob det nmod prp vmod vmod vmod vmod det dob nmod vmod pob nmod nmod pob nmod adv nmod punct
+tmp pob nmod punct sub root vmod vmod sub coord conj nmod nmod vmod det dob nmod dob nmod nmod adv loc det pob tmp pob det pob nmod adv punct
+adv pob nmod punct sub nmod coord conj vmod nmod root dob nmod nmod tmp det pob loc pob punct
+sub root vmod vmod pob adv punct
+root nmod mnr pob nmod
+adv prp vmod adv dob nmod nmod punct sub adv root det dob nmod nmod nmod vmod det amod nmod amod loc pob punct
+sub nmod root det dob nmod det dob nmod nmod det pob coord conj nmod tmp nmod vmod pob coord adv conj det dob nmod det pob tmp det pob nmod punct
+sub nmod root vmod pob nmod vmod vmod det pob tmp det pob nmod coord conj det nmod nmod vmod punct

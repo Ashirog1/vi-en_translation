@@ -30,6 +30,7 @@ current_path = os.getcwd()
 envi_folder_path = os.path.join(current_path, "dataset/en-vi")
 # envi_folder_path = "/home/hnc/PycharmProjects/vdt_project1/dataset/en-vi"
 use_gpu = torch.cuda.is_available()
+# envi_folder_path = "/home/hnc/PycharmProjects/nlp_demo/dataset/en-vi-dep"
 
 
 def is_interative_notebook():
@@ -67,14 +68,24 @@ class EncoderDecoder(nn.Module):
         self.tgt_embed = tgt_embed
         self.generator = generator
 
-    def forward(self, src, tgt, src_mask, tgt_mask):
-        return self.decode(self.encode(src, src_mask), src_mask, tgt, tgt_mask)
+    def forward(self, src, tgt, src_head, tgt_head, src_dep, tgt_dep, src_mask, tgt_mask):
+        return self.decode(self.encode(src, src_head, src_dep, src_mask), src_mask, tgt, tgt_mask, tgt_head, tgt_dep)
 
-    def encode(self, src, src_mask):
-        return self.encoder(self.src_embed(src), src_mask)
+    def encode(self, src, src_head, src_dep, src_mask):
+        # print(src.shape, src_head.shape, src_dep.shape, src_mask.shape)
+        return self.encoder(self.src_embed([src, src_head, src_dep]), src_mask)
 
-    def decode(self, memory, src_mask, tgt, tgt_mask):
-        return self.decoder(self.tgt_embed(tgt), memory, src_mask, tgt_mask)
+    def decode(self, memory, src_mask, tgt, tgt_mask, tgt_head, tgt_dep):
+        return self.decoder(self.tgt_embed([tgt, tgt_head, tgt_dep]), memory, src_mask, tgt_mask)
+
+    # def forward(self, src, tgt, src_mask, tgt_mask):
+    #     return self.decode(self.encode(src, src_mask), src_mask, tgt, tgt_mask)
+
+    # def encode(self, src, src_mask):
+    #     return self.encoder(self.src_embed(src), src_mask)
+
+    # def decode(self, memory, src_mask, tgt, tgt_mask):
+    #     return self.decoder(self.tgt_embed(tgt), memory, src_mask, tgt_mask)
 
 class Generator(nn.Module):
     def __init__(self, d_model, vocab):
@@ -162,32 +173,6 @@ def subsequent_mask(size):
     subsequent_mask = torch.triu(torch.ones(attn_shape), diagonal=1).type(torch.uint8)
     return subsequent_mask == 0
 
-def example_mask():
-    LS_data = pd.concat([
-        pd.DataFrame(
-            {
-                "Subsequent Mask": subsequent_mask(20)[0][x, y].flatten(),
-                "Window": y,
-                "Masking": x,
-            }
-        )
-        for y in range(20)
-        for x in range(20)
-    ])
-
-    return (
-        alt.Chart(LS_data)
-        .mark_rect()
-        .properties(height=250, width=250)
-        .encode(
-            alt.X("Window:O"),
-            alt.Y("Masking:O"),
-            alt.Color("Subsequent Mask: Q", scale=alt.Scale(scheme="viridis")),
-        ).interactive()
-    )
-
-# show_example(example_mask)
-
 def attention(query, key, value, mask=None, dropout=None):
     d_k = query.size(-1)
     scores = torch.matmul(query, key.transpose(-2, -1)) / math.sqrt(d_k)
@@ -241,43 +226,21 @@ class PositionwiseFeedForward(nn.Module):
     def forward(self, x):
         return self.w_2(self.dropout(self.w_1(x).relu()))
 
-
-def DepPrase(x):
-    dep_tensor = torch.empty(x.shape)
-    for i in range(x.shape[0]):
-        words = []
-        for t in x[i]:
-            try:
-                word = spacy_en.vocab.strings[t.item()]
-                words.append(word)
-            except Exception as e:
-                pass
-        text = " ".join(words)
-        doc = spacy_en(text)
-        print(text)
-        dep_info = []
-        
-        for token in doc:
-            dep_info.append(token.dep_)
-        while len(dep_info < x.shape[1]):
-            dep_info.append(0)
-            
-        cur_dep = torch.tensor([spacy_en.vocab.strings[s] for s in dep_info])
-        print(cur_dep.shape)
-    
-
-
 class Embeddings(nn.Module):
-    def __init__(self, d_model, vocab):
+    def __init__(self, d_model, vocab, vocab_dep):
         super(Embeddings, self).__init__()
         self.lut = nn.Embedding(vocab, d_model)
+        self.lut_head = nn.Embedding(vocab, d_model)
+        self.lut_dep = nn.Embedding(vocab_dep, d_model)
         self.d_model = d_model
 
-    def forward(self, x):
-        return self.lut(x) * math.sqrt(self.d_model)
-
-
-    
+    def forward(self, y):
+        x, x_head, x_dep = y
+        emb = self.lut(x)
+        emb_head = self.lut_head(x_head)
+        emb_dep = self.lut_dep(x_dep)
+        emb = emb + emb_head + emb_dep
+        return emb * math.sqrt(self.d_model)
 
 class PositionalEncoding(nn.Module):
     def __init__(self, d_model, dropout, max_len=5000):
@@ -297,26 +260,7 @@ class PositionalEncoding(nn.Module):
         x = x + self.pe[:, :x.size(1)].requires_grad_(False)
         return self.dropout(x)
 
-def example_positional():
-    pe = PositionalEncoding(20, 0)
-    y = pe.forward(torch.zeros(1, 100, 20))
-
-    data = pd.concat([
-        pd.DataFrame({
-            "embedding": y[0, :, dim],
-            "dimension": dim,
-            "position": list(range(100)),
-        })
-        for dim in [4, 5, 6, 7]
-    ])
-
-    return (
-        alt.Chart(data).mark_line().properties(width=800).encode(x="position", y="embedding", color="dimension:N").interactive()
-    )
-
-# show_example(example_positional)
-
-def make_model(src_vocab, tgt_vocab, N=6, d_model=512, d_ff=2048, h=8, dropout=0.1):
+def make_model(src_vocab, tgt_vocab, src_vocab_dep, tgt_vocab_dep, N=6, d_model=512, d_ff=2048, h=8, dropout=0.1):
     c = copy.deepcopy
     attn = MultiHeadedAttention(h, d_model)
     ff = PositionwiseFeedForward(d_model, d_ff, dropout)
@@ -324,8 +268,8 @@ def make_model(src_vocab, tgt_vocab, N=6, d_model=512, d_ff=2048, h=8, dropout=0
     model = EncoderDecoder(
         Encoder(EncoderLayer(d_model, c(attn), c(ff), dropout), N),
         Decoder(DecoderLayer(d_model, c(attn), c(attn), c(ff), dropout), N),
-        nn.Sequential(Embeddings(d_model, src_vocab), c(position)),
-        nn.Sequential(Embeddings(d_model, tgt_vocab), c(position)),
+        nn.Sequential(Embeddings(d_model, src_vocab, src_vocab_dep), c(position)),
+        nn.Sequential(Embeddings(d_model, tgt_vocab, tgt_vocab_dep), c(position)),
         Generator(d_model, tgt_vocab),
     )
     for p in model.parameters():
@@ -337,33 +281,8 @@ def make_model(src_vocab, tgt_vocab, N=6, d_model=512, d_ff=2048, h=8, dropout=0
 
     return model
 
-def inference_test():
-    test_model = make_model(11, 11, 2)
-    test_model.eval()
-    src = torch.LongTensor([[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]])
-    src_embbed = test_model.src_embed(src)
-    print(src_embbed)
-    src_mask = torch.ones(1, 1, 10)
-
-    memory = test_model.encode(src, src_mask)
-    ys = torch.zeros(1, 1).type_as(src)
-
-    for i in range(9):
-        out = test_model.decode(memory, src_mask, ys, subsequent_mask(ys.size(1)).type_as(src.data))
-        prob = test_model.generator(out[:, -1])
-        _, next_word = torch.max(prob, dim=1)
-        ys = torch.cat([ys, torch.empty(1, 1).type_as(src.data).fill_(next_word)], dim=1)
-
-    print("Example Untrained Model Prediction:", ys)
-
-def run_tests():
-    for _ in range(10):
-        inference_test()
-
-# show_example(run_tests)
-
 class Batch:
-    def __init__(self, src, tgt=None, pad=2):
+    def __init__(self, src, tgt, src_head, tgt_head, src_dep, tgt_dep, pad=2):
         self.src = src
         self.src_mask = (src != pad).unsqueeze(-2)
         if tgt is not None:
@@ -371,6 +290,22 @@ class Batch:
             self.tgt_y = tgt[:, 1:]
             self.tgt_mask = self.make_std_mask(self.tgt, pad)
             self.ntokens = (self.tgt_y != pad).data.sum()
+
+        self.src_head = src_head
+        self.src_mask_head = (src_head != pad).unsqueeze(-2)
+        if tgt_head is not None:
+            self.tgt_head = tgt_head[:, :-1]
+            self.tgt_y_head = tgt_head[:, 1:]
+            self.tgt_mask_head = self.make_std_mask(self.tgt_head, pad)
+            self.ntokens_head = (self.tgt_y_head != pad).data.sum()
+
+        self.src_dep = src_dep
+        self.src_mask_dep = (src_dep != pad).unsqueeze(-2)
+        if tgt_head is not None:
+            self.tgt_dep = tgt_dep[:, :-1]
+            self.tgt_y_dep = tgt_dep[:, 1:]
+            self.tgt_mask_dep = self.make_std_mask(self.tgt_dep, pad)
+            self.ntokens_dep = (self.tgt_y_dep != pad).data.sum()
 
     @staticmethod
     def make_std_mask(tgt, pad):
@@ -400,7 +335,7 @@ def run_epoch(
     tokens = 0
     n_accum = 0
     for i, batch in enumerate(data_iter):
-        out = model.forward(batch.src, batch.tgt, batch.src_mask, batch.tgt_mask)
+        out = model.forward(batch.src, batch.tgt, batch.src_head, batch.tgt_head, batch.src_dep, batch.tgt_dep, batch.src_mask, batch.tgt_mask)
         loss, loss_node = loss_compute(out, batch.tgt_y, batch.ntokens)
 
         if mode == "train" or mode == "train+log":
@@ -442,55 +377,6 @@ def rate(step, model_size, factor, warmup):
 
     return factor * (model_size ** (-0.5) * min(step ** (-0.5), step*warmup**(-1.5)))
 
-def example_learning_schedule():
-    opts = [
-        [512, 1, 4000],
-        [512, 1, 8000],
-        [512, 1, 4000],
-    ]
-
-    dummy_model = torch.nn.Linear(1, 1)
-    learning_rates = []
-
-    for idx, example in enumerate(opts):
-        optimizer = torch.optim.Adam(dummy_model.parameters(), lr=1, betas=(0.9, 0.98), eps=1e-9)
-        lr_scheduler = LambdaLR(optimizer=optimizer, lr_lambda=lambda step: rate(step, *example))
-
-        tmp = []
-
-        for step in range(20000):
-            tmp.append(optimizer.param_groups[0]["lr"])
-            optimizer.step()
-            lr_scheduler.step()
-        learning_rates.append(tmp)
-
-    learning_rates = torch.tensor(learning_rates)
-
-    alt.data_transformers.disable_max_rows()
-
-    opts_data = pd.concat(
-        [
-            pd.DataFrame(
-                {
-                    "Learning Rate": learning_rates[warmup_idx, :],
-                    "model_size:warmup": ["512:4000", "512:8000", "256:4000"][warmup_idx],
-                    "step": range(20000),
-                }
-            )
-            for warmup_idx in [0, 1, 2]
-        ]
-    )
-
-    return (
-        alt.Chart(opts_data)
-        .mark_line()
-        .properties(width=600)
-        .encode(x="step", y="Learning Rate", color="model_size:warmup:N")
-        .interactive()
-    )
-
-# example_learning_schedule()
-
 class LabelSmoothing(nn.Module):
     def __init__(self, size, padding_idx, smoothing=0.0):
         super(LabelSmoothing, self).__init__()
@@ -513,55 +399,10 @@ class LabelSmoothing(nn.Module):
         self.true_dist = true_dist
         return self.criterion(x, true_dist.clone().detach())
 
-def example_label_smoothing():
-    crit = LabelSmoothing(5, 0, 0.4)
-    predict = torch.FloatTensor(
-        [
-            [0, 0.2, 0.7, 0.1, 0],
-            [0, 0.2, 0.7, 0.1, 0],
-            [0, 0.2, 0.7, 0.1, 0],
-            [0, 0.2, 0.7, 0.1, 0],
-            [0, 0.2, 0.7, 0.1, 0],
-        ]
-    )
-    crit(x=predict.log(), target=torch.LongTensor([2, 1, 0, 3, 3]))
-    LS_data = pd.concat([
-        pd.DataFrame({
-            "target distribution": crit.true_dist[x, y].flatten(),
-            "columns": y,
-            "rows": x,
-        })
-        for y in range(5)
-        for x in range(5)
-    ])
-
-    return (alt.Chart(LS_data)
-            .mark_rect(color="Blue", opacity=1)
-            .properties(height=200, width=200)
-            .encode(alt.X("columns:O", title=None),
-                    alt.Y("rows:O", title=None),
-                    alt.Color("target distribution:Q", scale=alt.Scale(scheme="viridis")),).interative()
-            )
-
-# show_example(example_label_smoothing)
-
 def loss(x, crit):
     d = x + 3 * 1
     predict = torch.FloatTensor([[0, x/d, 1/d, 1/d, 1/d]])
     return crit(predict.log(), torch.LongTensor([1])).data
-
-def penalization_visualization():
-    crit = LabelSmoothing(5, 0, 0.1)
-    loss_data = pd.DataFrame({
-        "Loss": [loss(x, crit) for x in range(1, 100)],
-        "Steps": list(range(99)),
-    }).astype("float")
-
-    return (
-        alt.Chart(loss_data).mark_line().properties(width=350).encode(x="Steps", y="Loss").interactive()
-    )
-
-# show_example(penalization_visualization)
 
 def data_gen(V, batch_size, nbatches):
     for i in range(nbatches):
@@ -592,43 +433,6 @@ def greedy_decode(model, src, src_mask, max_len, start_symbol):
         ys = torch.cat([ys, torch.zeros(1, 1).type_as(src.data).fill_(next_word)], dim=1)
     return ys
 
-def example_simple_model():
-    V = 11
-    criterion = LabelSmoothing(size=V, padding_idx=0, smoothing=0.0)
-    model = make_model(V, V, N=2)
-
-    optimizer = torch.optim.Adam(model.parameters(), lr=0.5, betas=(0.9, 0.98), eps=1e-9)
-
-    lr_scheduler = LambdaLR(optimizer=optimizer,
-                            lr_lambda=lambda step: rate(step, model_size=model.src_embed[0].d_model, factor=1.0, warmup=400),)
-
-    batch_size = 80
-    for epoch in range(20):
-        model.train()
-        run_epoch(
-            data_gen(V, batch_size, 20),
-            model,
-            SimpleLossCompute(model.generator, criterion),
-            optimizer,
-            lr_scheduler,
-            model="train"
-        )
-        model.eval()
-        run_epoch(
-            data_gen(V, batch_size, 5),
-            model,
-            SimpleLossCompute(model.generator, criterion),
-            DummyOptimizer(),
-            DummyScheduler(),
-            mode="eval",
-        )[0]
-
-    model.eval()
-    src = torch.LongTensor([[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]])
-    max_len = src.shape[1]
-    src_mask = torch.ones(1, 1, max_len)
-    print(greedy_decode(model, src, src_mask, max_len=max_len, start_symbol=0))
-
 def load_tokenizers():
     try:
         spacy_en = spacy.load("en_core_web_sm")
@@ -639,12 +443,7 @@ def load_tokenizers():
     return spacy_en
 
 def tokenize(text, tokenizer):
-    doc = spacy_en(text)
-    a = [tok.text for tok in tokenizer.tokenizer(text)]
-    for tok in doc:
-        a.append(tok.dep_)
-    return a
-    
+    return [tok.text for tok in tokenizer.tokenizer(text)]
 
 def yield_tokens(data_iter, tokenizer, index):
     for from_to_tuple in data_iter:
@@ -675,22 +474,39 @@ def build_vocabulary(spacy_en):
         specials=["<s>", "</s>", "<blank>", "<unk>"]
     )
 
+    train = nmt_dataset.VLSP2021_DEP(envi_folder_path, "train")
+    val = nmt_dataset.VLSP2021_DEP(envi_folder_path, "dev")
+    test = nmt_dataset.VLSP2021_DEP(envi_folder_path, "tst")
+    vocab_src_dep = build_vocab_from_iterator(
+        yield_tokens(train + val + test, tokenize_vi, index=0),
+        min_freq=2
+    )
+
+    train = nmt_dataset.VLSP2021_DEP(envi_folder_path, "train")
+    val = nmt_dataset.VLSP2021_DEP(envi_folder_path, "dev")
+    test = nmt_dataset.VLSP2021_DEP(envi_folder_path, "tst")
+    vocab_tgt_dep = build_vocab_from_iterator(
+        yield_tokens(train + val + test, tokenize_vi, index=1),
+        min_freq=2
+    )
+
     vocab_src.set_default_index(vocab_src["<unk>"])
     vocab_tgt.set_default_index(vocab_tgt["<unk>"])
 
-    return vocab_src, vocab_tgt
+    return vocab_src, vocab_tgt, vocab_src_dep, vocab_tgt_dep
 
 def load_vocab(spacy_en):
     if not exists("vocab_envi.pt"):
-        vocab_src, vocab_tgt = build_vocabulary(spacy_en)
-        torch.save((vocab_src, vocab_tgt), "vocab_envi.pt")
+        vocab_src, vocab_tgt, vocab_src_dep, vocab_tgt_dep = build_vocabulary(spacy_en)
+        torch.save((vocab_src, vocab_tgt, vocab_src_dep, vocab_tgt_dep), "vocab_envi.pt")
     else:
-        vocab_src, vocab_tgt = torch.load("vocab_envi.pt")
-    return vocab_src, vocab_tgt
+        vocab_src, vocab_tgt, vocab_src_dep, vocab_tgt_dep = torch.load("vocab_envi.pt")
+
+    return vocab_src, vocab_tgt, vocab_src_dep, vocab_tgt_dep
 
 if is_interative_notebook():
     spacy_en = show_example(load_tokenizers)
-    vocab_src, vocab_tgt = show_example(load_vocab, args=[spacy_en])
+    vocab_src, vocab_tgt, vocab_src_dep, vocab_tgt_dep = show_example(load_vocab, args=[spacy_en])
 
 def collate_batch(
         batch,
@@ -698,58 +514,158 @@ def collate_batch(
         tgt_pipeline,
         src_vocab,
         tgt_vocab,
+        src_vocab_dep,
+        tgt_vocab_dep,
         device,
         max_padding=128,
         pad_id=2,
 ):
     bs_id = torch.tensor([0], device=device)
     eos_id = torch.tensor([1], device=device)
-    src_list, tgt_list = [], []
+    src_list, tgt_list, src_list_head, tgt_list_head, src_list_dep, tgt_list_dep = [], [], [], [], [], []
     for (_src, _tgt) in batch:
-        processed_src = torch.cat(
-            [
-                bs_id,
-                torch.tensor(
-                    src_vocab(src_pipeline(_src)),
-                    dtype=torch.int64,
-                    device=device
-                ),
-                eos_id,
-            ],
-            0,
-        )
-        processed_tgt = torch.cat(
-            [
-                bs_id,
-                torch.tensor(
-                    tgt_vocab(tgt_pipeline(_tgt)),
-                    dtype=torch.int64,
-                    device=device,
-                ),
-                eos_id,
-            ],
-            0,
-        )
-        src_list.append(
-            pad(processed_src,(
-                0, max_padding-len(processed_src)
-            ), value=pad_id,)
-        )
-        tgt_list.append(
-            pad(processed_tgt, (
-                0, max_padding - len(processed_tgt)
-            ), value=pad_id,)
-        )
+        if 'head : ' in _src:
+            processed_src_head = torch.cat(
+                [
+                    bs_id,
+                    torch.tensor(
+                        src_vocab(src_pipeline(_src[7:])),
+                        dtype=torch.int64,
+                        device=device
+                    ),
+                    eos_id,
+                ],
+                0,
+            )
+            processed_tgt_head = torch.cat(
+                [
+                    bs_id,
+                    torch.tensor(
+                        tgt_vocab(tgt_pipeline(_tgt[7:])),
+                        dtype=torch.int64,
+                        device=device,
+                    ),
+                    eos_id,
+                ],
+                0,
+            )
+            src_list_head.append(
+                pad(processed_src_head, (
+                    0, max_padding - len(processed_src_head)
+                ), value=pad_id, )
+            )
+            tgt_list_head.append(
+                pad(processed_tgt_head, (
+                    0, max_padding - len(processed_tgt_head)
+                ), value=pad_id, )
+            )
+        elif 'dep : ' in _src:
+            processed_src_dep = torch.cat(
+                [
+                    bs_id,
+                    torch.tensor(
+                        src_vocab_dep(_src[6:].split()),
+                        dtype=torch.int64,
+                        device=device
+                    ),
+                    eos_id,
+                ],
+                0,
+            )
+            processed_tgt_dep = torch.cat(
+                [
+                    bs_id,
+                    torch.tensor(
+                        tgt_vocab_dep(_tgt[6:].split()),
+                        dtype=torch.int64,
+                        device=device,
+                    ),
+                    eos_id,
+                ],
+                0,
+            )
+            src_list_dep.append(
+                pad(processed_src_dep, (
+                    0, max_padding - len(processed_src_dep)
+                ), value=pad_id, )
+            )
+            tgt_list_dep.append(
+                pad(processed_tgt_dep, (
+                    0, max_padding - len(processed_tgt_dep)
+                ), value=pad_id, )
+            )
+        else:
+            processed_src = torch.cat(
+                [
+                    bs_id,
+                    torch.tensor(
+                        src_vocab(src_pipeline(_src)),
+                        dtype=torch.int64,
+                        device=device
+                    ),
+                    eos_id,
+                ],
+                0,
+            )
+            processed_tgt = torch.cat(
+                [
+                    bs_id,
+                    torch.tensor(
+                        tgt_vocab(tgt_pipeline(_tgt)),
+                        dtype=torch.int64,
+                        device=device,
+                    ),
+                    eos_id,
+                ],
+                0,
+            )
+            src_list.append(
+                pad(processed_src,(
+                    0, max_padding-len(processed_src)
+                ), value=pad_id,)
+            )
+            tgt_list.append(
+                pad(processed_tgt, (
+                    0, max_padding - len(processed_tgt)
+                ), value=pad_id,)
+            )
+
+    max_size = max(len(src_list), len(src_list_head), len(src_list_dep), len(tgt_list), len(tgt_list_head), len(tgt_list_dep))
+    padding_tensor = torch.zeros(max_padding, dtype=torch.int64, device=device)
+
+    while (len(src_list) < max_size):
+        src_list.append(padding_tensor)
+    while (len(tgt_list) < max_size):
+        tgt_list.append(padding_tensor)
+    while (len(src_list_head) < max_size):
+        src_list_head.append(padding_tensor)
+    while (len(tgt_list_head) < max_size):
+        tgt_list_head.append(padding_tensor)
+    while (len(src_list_dep) < max_size):
+        src_list_dep.append(padding_tensor)
+    while (len(tgt_list_dep) < max_size):
+        tgt_list_dep.append(padding_tensor)
+
+
 
     src = torch.stack(src_list)
     tgt = torch.stack(tgt_list)
 
-    return (src, tgt)
+    src_head = torch.stack(src_list_head)
+    tgt_head = torch.stack(tgt_list_head)
+
+    src_dep = torch.stack(src_list_dep)
+    tgt_dep = torch.stack(tgt_list_dep)
+    # print(max_size)
+    # print("Collect batch", src.shape, src_head.shape, src_dep.shape)
+    return (src, tgt, src_head, tgt_head, src_dep, tgt_dep)
 
 def create_dataloaders(
         device,
         vocab_src,
         vocab_tgt,
+        vocab_src_dep,
+        vocab_tgt_dep,
         spacy_en,
         batch_size=12000,
         max_padding=128,
@@ -768,6 +684,8 @@ def create_dataloaders(
             tokenize_vi,
             vocab_src,
             vocab_tgt,
+            vocab_src_dep,
+            vocab_tgt_dep,
             device,
             max_padding=max_padding,
             pad_id=vocab_src.get_stoi()["<blank>"],
@@ -777,10 +695,18 @@ def create_dataloaders(
     valid_iter = nmt_dataset.VLSP2021(envi_folder_path, "dev")
     test_iter = nmt_dataset.VLSP2021(envi_folder_path, "tst")
 
-    train_iter_map = to_map_style_dataset(train_iter)
+    train_iter_head = nmt_dataset.VLSP2021_HEAD(envi_folder_path, "train", prefix='head')
+    valid_iter_head = nmt_dataset.VLSP2021_HEAD(envi_folder_path, "dev", prefix='head')
+    test_iter_head = nmt_dataset.VLSP2021_HEAD(envi_folder_path, "tst", prefix='head')
+
+    train_iter_dep = nmt_dataset.VLSP2021_DEP(envi_folder_path, "train", prefix='dep')
+    valid_iter_dep = nmt_dataset.VLSP2021_DEP(envi_folder_path, "dev", prefix='dep')
+    test_iter_dep = nmt_dataset.VLSP2021_DEP(envi_folder_path, "tst", prefix='dep')
+
+    train_iter_map = to_map_style_dataset(train_iter + train_iter_head + train_iter_dep)
     train_sampler = (DistributedSampler(train_iter_map) if is_distributed else None)
 
-    valid_iter_map = to_map_style_dataset(valid_iter)
+    valid_iter_map = to_map_style_dataset(valid_iter + valid_iter_head + valid_iter_dep)
     valid_sampler = (DistributedSampler(valid_iter_map) if is_distributed else None)
 
     train_dataloader = DataLoader(
@@ -804,6 +730,8 @@ def train_worker(
         ngpus_per_node,
         vocab_src,
         vocab_tgt,
+        vocab_src_dep,
+        vocab_tgt_dep,
         spacy_en,
         config,
         is_distributed=False,
@@ -813,18 +741,18 @@ def train_worker(
 
     pad_idx = vocab_tgt["<blank>"]
     d_model = 512
-    model = make_model(len(vocab_src), len(vocab_tgt), N=6)
+    model = make_model(len(vocab_src), len(vocab_tgt), len(vocab_src_dep), len(vocab_tgt_dep), N=6)
     if use_gpu:
         model.cuda(gpu)
 
     module = model
     is_main_process = True
-    if is_distributed:
-        dist.init_process_group("nccl", init_method="env://", rank=gpu,
-                                world_size=ngpus_per_node)
-        model = DDP(model, device_ids=[gpu])
-        module = model.module
-        is_main_process = gpu == 0
+    # if is_distributed:
+    #     dist.init_process_group("nccl", init_method="env://", rank=gpu,
+    #                             world_size=ngpus_per_node)
+    #     model = DDP(model, device_ids=[gpu])
+    #     module = model.module
+    #     is_main_process = gpu == 0
 
     criterion = LabelSmoothing(size=len(vocab_tgt), padding_idx=pad_idx, smoothing=0.1)
     if use_gpu:
@@ -834,6 +762,8 @@ def train_worker(
         gpu if use_gpu else torch.device("cpu"),
         vocab_src,
         vocab_tgt,
+        vocab_src_dep,
+        vocab_tgt_dep,
         spacy_en,
         batch_size=config["batch_size"]//ngpus_per_node,
         max_padding=config["max_padding"],
@@ -857,7 +787,7 @@ def train_worker(
         model.train()
 
         _, train_state = run_epoch(
-            (Batch(b[0], b[1], pad_idx) for b in train_dataloader),
+            (Batch(b[0], b[1], b[2], b[3], b[4], b[5], pad_idx) for b in train_dataloader),
             model,
             SimpleLossCompute(module.generator, criterion),
             optimizer,
@@ -877,7 +807,7 @@ def train_worker(
         model.eval()
 
         sloss = run_epoch(
-            (Batch(b[0], b[1], pad_idx) for b in valid_dataloader),
+            (Batch(b[0], b[1], b[2], b[3], b[4], b[5], pad_idx) for b in valid_dataloader),
             model,
             SimpleLossCompute(module.generator, criterion),
             DummyOptimizer(),
@@ -892,26 +822,15 @@ def train_worker(
         file_path = "%sfinal.pt" % config["file_prefix"]
         torch.save(module.state_dict(), file_path)
 
-# def train_distributed_model(vocab_src, vocab_tgt, spacy_en, config):
-#     from the_annotated_transformer import train_worker
-#     ngpus = torch.cuda.device_count()
-#     os.environ["MASTER_ADDR"] = "localhost"
-#     os.environ["MASTER_PORT"] = "123456"
-#     mp.spawn(
-#         train_worker,
-#         nprocs=ngpus,
-#         args=(ngpus, vocab_src, vocab_tgt, spacy_en, config, True)
-#     )
-
-def train_model(vocab_src, vocab_tgt, spacy_en, config):
+def train_model(vocab_src, vocab_tgt, vocab_src_dep, vocab_tgt_dep, spacy_en, config):
     # if config["distributed"]:
     #     train_distributed_model(vocab_src, vocab_tgt, spacy_en, config)
     # else:
-    train_worker(0, 1, vocab_src, vocab_tgt, spacy_en, config, False)
+    train_worker(0, 1, vocab_src, vocab_tgt, vocab_src_dep, vocab_tgt_dep, spacy_en, config, False)
 
 def load_trained_model():
     config = {
-        "batch_size": 10,
+        "batch_size": 8,
         "distributed": False,
         "num_epochs": 8,
         "accum_iter": 10,
@@ -922,7 +841,7 @@ def load_trained_model():
     }
     model_path = "vlsp_model_final.pt"
     if not exists(model_path):
-        train_model(vocab_src, vocab_tgt, spacy_en, config)
+        train_model(vocab_src, vocab_tgt, vocab_src_dep, vocab_tgt_dep, spacy_en, config)
 
     # model_path = "vlsp_model_00.pt"
 
@@ -937,9 +856,9 @@ def load_trained_model():
 if is_interative_notebook():
     model = load_trained_model()
 
-if False:
-    model.src_embed[0].lut.weight = model.tgt_embeddings[0].lut.weight
-    model.generator.lut.weight = model.tgt_embed[0].lut.weight
+# if False:
+#     model.src_embed[0].lut.weight = model.tgt_embeddings[0].lut.weight
+#     model.generator.lut.weight = model.tgt_embed[0].lut.weight
 
 def average(model, models):
     "Average models into model"
@@ -955,36 +874,34 @@ def check_outputs(
         pad_idx=2,
         eos_string="</s>",
 ):
-    n_examples = 10
     results = [()] * n_examples
     for idx in range(n_examples):
         b = next(iter(valid_dataloader))
         rb = Batch(b[0], b[1], pad_idx)
         greedy_decode(model, rb.src, rb.src_mask, 64, 0)[0]
-        
 
         src_tokens = [
-            vocab_src.get_itos()[x] for x in rb.src[0] if x != pad_idx and vocab_src.get_itos()[x] != "<unk>"
+            vocab_src.get_itos()[x] for x in rb.src[0] if x != pad_idx
         ]
         tgt_tokens = [
             vocab_tgt.get_itos()[x] for x in rb.tgt[0] if x != pad_idx
         ]
-        # print(
-        #     "Source Text (Input)        : "
-        #     + " ".join(src_tokens).replace("\n", "") + "\n"
-        # )
         with open("reference.txt", 'a') as f:
             f.write(
             " ".join(tgt_tokens).replace("\n", "") + "\n")
+        print(
+            "Target Text (Ground Truth) : "
+            + " ".join(tgt_tokens).replace("\n", "")
+        )
 
         model_out = greedy_decode(model, rb.src, rb.src_mask, 72, 0)[0]
-        model_text = (
+        model_txt = (
             " ".join([vocab_tgt.get_itos()[x] for x in model_out if x != pad_idx]).split(eos_string, 1)[0] + eos_string
         )
         with open("hypothesis.txt", 'a') as f:
-            f.write(model_text + "\n")
+            f.write(model_txt + "\n")
 
-        results[idx] = (rb, src_tokens, tgt_tokens, model_out, model_text)
+        results[idx] = (rb, src_tokens, tgt_tokens, model_out, model_txt)
 
     return results
 
@@ -1137,29 +1054,3 @@ def viz_decoder_self():
     )
 
 # show_example(viz_decoder_self)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
