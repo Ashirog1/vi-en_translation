@@ -874,6 +874,7 @@ def check_outputs(
         pad_idx=2,
         eos_string="</s>",
 ):
+    n_examples = 100
     results = [()] * n_examples
     for idx in range(n_examples):
         b = next(iter(valid_dataloader))
